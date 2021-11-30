@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphics}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{booktabs}
+\begin{document}
+	\title{maixiess}
+	\author{nyx}
+	\maketitle
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	\section{mama}
+		Hi, this is my first \LaTeX{} file.
+		$$ e^{ix}=\cos(x)+i\sin(x). $$
+	\subsection*{mamama}
+	A reference to this subsection\label{sec:this} looks like:
+	``see section~\ref{sec:this} on page~\pageref{sec:this}.''
+	\begin{enumerate}
+		\item An item.
+		\begin{enumerate}
+			\item A nested item.\label{itref}
+			\item A starred item.
+		\end{enumerate}
+		\item Reference(\ref{itref}).
+	\end{enumerate}
+	\begin{itemize}
+		\item An item.
+		\begin{itemize}
+			\item A nested item.
+			\item A `plus' item.
+			\item Another item.
+		\end{itemize}
+		\item Go back to upper level.
+	\end{itemize}
+	\begin{lstlisting}[language=c++]
+		#include <iostream>
+		int main()
+		{
+			std::cout << "Hello, world!"
+			<< std::endl;
+			return 0;
+		}
+	\end{lstlisting}
+	\begin{tabular}{cccc}
+		\toprule
+		& \multicolumn{3}{c}{Numbers} \\
+		\cmidrule{2-4}
+		& 1 & 2 & 3 \\
+		\midrule
+		Alphabet & A & B & C \\
+		Roman & I & II& III \\
+		\bottomrule
+	\end{tabular}
+\end{document}
