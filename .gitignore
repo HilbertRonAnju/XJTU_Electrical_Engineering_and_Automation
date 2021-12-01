@@ -8,10 +8,59 @@ Python/
 选修课/web程序设计/
 选修课/体育课/
 数学建模/
+电力系统分析教材.pdf
+电力系统暂态分析教材.pdf
+模拟电子技术基础.pdf
 *.caj
 *.zip
 *.rar
 *.7z
+*.mp4
+*.exe
+
+# git ignore for javascript project
+# Numerous always-ignore extensions  
+*.bak  
+*.patch  
+*.diff  
+*.err  
+
+# temp file for git conflict merging  
+*.orig  
+*.log  
+*.rej  
+*.swo  
+*.swp  
+*.zip  
+*.vi  
+*~  
+*.sass-cache  
+*.tmp.html  
+*.dump  
+
+# OS or Editor folders  
+.DS_Store  
+._*  
+.cache  
+.project  
+.settings  
+.tmproj  
+*.esproj  
+*.sublime-project  
+*.sublime-workspace  
+nbproject  
+thumbs.db  
+*.iml  
+
+# Folders to ignore  
+.hg  
+.svn  
+.CVS  
+.idea  
+node_modules/  
+jscoverage_lib/  
+bower_components/  
+dist/  
 
 # git ignore for Vivado Project
 # Do NOT ignore VHDL, Verilog, block diagrams or EDIF files.
