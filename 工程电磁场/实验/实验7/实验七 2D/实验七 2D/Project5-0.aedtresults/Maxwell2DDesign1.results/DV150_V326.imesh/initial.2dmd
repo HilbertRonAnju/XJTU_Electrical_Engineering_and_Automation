@@ -1,0 +1,319 @@
+'<header>'
+   file_format_version 'ansoft_cmu_abstract_model_version 1.0.0'
+   mesh_file_checksum 'npts=85; nedges= 232; nelem= 148; nfacets= 3   116    12    20'
+'</header>'
+'<model>'
+   modelname 'no name'
+   user_unit_name mm
+   unit_conv 1000
+   nbodies 3
+   facet_face_map_size 3
+   '<body>'
+      bodyid 6
+      bodyname coil
+      sheet_body 1
+      nfaces 1
+      nedges 4
+      nmodelverts 0
+      '<face>'
+         face_id 16
+         ncofacets 1
+         '<cofacet>'
+            facet_id 5
+            order 0
+         '</cofacet>'
+      '</face>'
+      '<edge>'
+         edge_id 7
+         nseg 3
+         '<segment>'
+            fromid 11
+            toid 70
+         '</segment>'
+         '<segment>'
+            fromid 70
+            toid 43
+         '</segment>'
+         '<segment>'
+            fromid 43
+            toid 73
+         '</segment>'
+      '</edge>'
+      '<edge>'
+         edge_id 8
+         nseg 4
+         '<segment>'
+            fromid 73
+            toid 40
+         '</segment>'
+         '<segment>'
+            fromid 40
+            toid 45
+         '</segment>'
+         '<segment>'
+            fromid 45
+            toid 50
+         '</segment>'
+         '<segment>'
+            fromid 50
+            toid 8
+         '</segment>'
+      '</edge>'
+      '<edge>'
+         edge_id 9
+         nseg 4
+         '<segment>'
+            fromid 8
+            toid 76
+         '</segment>'
+         '<segment>'
+            fromid 76
+            toid 38
+         '</segment>'
+         '<segment>'
+            fromid 38
+            toid 36
+         '</segment>'
+         '<segment>'
+            fromid 36
+            toid 34
+         '</segment>'
+      '</edge>'
+      '<edge>'
+         edge_id 10
+         nseg 1
+         '<segment>'
+            fromid 34
+            toid 11
+         '</segment>'
+      '</edge>'
+      '<vertices>'
+      '</vertices>'
+   '</body>'
+   '<body>'
+      bodyid 18
+      bodyname plate
+      sheet_body 1
+      nfaces 1
+      nedges 4
+      nmodelverts 0
+      '<face>'
+         face_id 28
+         ncofacets 1
+         '<cofacet>'
+            facet_id 4
+            order 0
+         '</cofacet>'
+      '</face>'
+      '<edge>'
+         edge_id 19
+         nseg 1
+         '<segment>'
+            fromid 42
+            toid 74
+         '</segment>'
+      '</edge>'
+      '<edge>'
+         edge_id 20
+         nseg 6
+         '<segment>'
+            fromid 74
+            toid 47
+         '</segment>'
+         '<segment>'
+            fromid 47
+            toid 77
+         '</segment>'
+         '<segment>'
+            fromid 77
+            toid 78
+         '</segment>'
+         '<segment>'
+            fromid 78
+            toid 79
+         '</segment>'
+         '<segment>'
+            fromid 79
+            toid 80
+         '</segment>'
+         '<segment>'
+            fromid 80
+            toid 72
+         '</segment>'
+      '</edge>'
+      '<edge>'
+         edge_id 21
+         nseg 1
+         '<segment>'
+            fromid 72
+            toid 75
+         '</segment>'
+      '</edge>'
+      '<edge>'
+         edge_id 22
+         nseg 6
+         '<segment>'
+            fromid 75
+            toid 81
+         '</segment>'
+         '<segment>'
+            fromid 81
+            toid 82
+         '</segment>'
+         '<segment>'
+            fromid 82
+            toid 83
+         '</segment>'
+         '<segment>'
+            fromid 83
+            toid 84
+         '</segment>'
+         '<segment>'
+            fromid 84
+            toid 85
+         '</segment>'
+         '<segment>'
+            fromid 85
+            toid 42
+         '</segment>'
+      '</edge>'
+      '<vertices>'
+      '</vertices>'
+   '</body>'
+   '<body>'
+      bodyid 30
+      bodyname region
+      sheet_body 1
+      nfaces 1
+      nedges 4
+      nmodelverts 0
+      '<face>'
+         face_id 40
+         ncofacets 3
+         '<cofacet>'
+            facet_id 5
+            order 0
+         '</cofacet>'
+         '<cofacet>'
+            facet_id 4
+            order 0
+         '</cofacet>'
+         '<cofacet>'
+            facet_id 3
+            order 0
+         '</cofacet>'
+      '</face>'
+      '<edge>'
+         edge_id 31
+         nseg 9
+         '<segment>'
+            fromid 21
+            toid 18
+         '</segment>'
+         '<segment>'
+            fromid 18
+            toid 14
+         '</segment>'
+         '<segment>'
+            fromid 14
+            toid 41
+         '</segment>'
+         '<segment>'
+            fromid 41
+            toid 48
+         '</segment>'
+         '<segment>'
+            fromid 48
+            toid 42
+         '</segment>'
+         '<segment>'
+            fromid 42
+            toid 74
+         '</segment>'
+         '<segment>'
+            fromid 74
+            toid 69
+         '</segment>'
+         '<segment>'
+            fromid 69
+            toid 63
+         '</segment>'
+         '<segment>'
+            fromid 63
+            toid 1
+         '</segment>'
+      '</edge>'
+      '<edge>'
+         edge_id 32
+         nseg 3
+         '<segment>'
+            fromid 1
+            toid 2
+         '</segment>'
+         '<segment>'
+            fromid 2
+            toid 3
+         '</segment>'
+         '<segment>'
+            fromid 3
+            toid 4
+         '</segment>'
+      '</edge>'
+      '<edge>'
+         edge_id 33
+         nseg 5
+         '<segment>'
+            fromid 4
+            toid 7
+         '</segment>'
+         '<segment>'
+            fromid 7
+            toid 10
+         '</segment>'
+         '<segment>'
+            fromid 10
+            toid 13
+         '</segment>'
+         '<segment>'
+            fromid 13
+            toid 17
+         '</segment>'
+         '<segment>'
+            fromid 17
+            toid 24
+         '</segment>'
+      '</edge>'
+      '<edge>'
+         edge_id 34
+         nseg 3
+         '<segment>'
+            fromid 24
+            toid 23
+         '</segment>'
+         '<segment>'
+            fromid 23
+            toid 22
+         '</segment>'
+         '<segment>'
+            fromid 22
+            toid 21
+         '</segment>'
+      '</edge>'
+      '<vertices>'
+      '</vertices>'
+   '</body>'
+   '<facet_face_map>'
+      '<entry>'
+         facet_id 3
+         face_id 40
+      '</entry>'
+      '<entry>'
+         facet_id 4
+         face_id 28
+      '</entry>'
+      '<entry>'
+         facet_id 5
+         face_id 16
+      '</entry>'
+   '</facet_face_map>'
+'</model>'

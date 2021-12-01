@@ -1,0 +1,136 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002020, month=000000000007, day=000000000005, hour=000000000020, min=000000000010, sec=000000000038)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000003510, lin=000000000115, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='Maxwell2DDesign1'
+	VersionID=651
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=756
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='', ID=47)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=47, Ver=651, Dir='DV47_V651.imesh/')
+	$end 'InitialMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=47, Ver=651, Dir='DV47_MI0_V651.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=652, Instance=\'\', Solution=-3, VersionID=0)'='SolutionBlock55'
+	'SolutionKey(SimSetup=652, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock54'
+	'SolutionKey(SimSetup=652, Instance=\'SolutionDefinition\', Solution=653, VersionID=0)'='SolutionBlock52'
+	'SolutionKey(SimSetup=652, Instance=\'SolutionDefinition\', Solution=654, VersionID=0)'='SolutionBlock53'
+$end 'BlockMapName'
+$begin 'SolutionBlock52'
+	SolutionName='AdaptivePass'
+	SolutionID=653
+	V=0
+	$begin 'States'
+		F(VID=47, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'NFSP'
+		$begin 'SubData'
+			ID=10
+			NFSP(VID=47, Ver=0, File='DV47_SOL653_NFSP10_V0.sd')
+		$end 'SubData'
+	$end 'NFSP'
+$end 'SolutionBlock52'
+$begin 'SolutionBlock53'
+	SolutionName='LastAdaptive'
+	SolutionID=654
+	V=0
+	$begin 'States'
+		F(VID=47, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'Fields'
+		IDDblMap(715, -1)
+		$begin 'DataMap'
+			VID=47
+			Ver=0
+			Field(DblID=715, Dir='DV47_SOL654_V0.Field715/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock53'
+$begin 'SolutionBlock54'
+	SimSetupID=652
+	SimSetupName='Setup1'
+	VersionID=0
+	SolveSetupID=8
+	$begin 'CurrMeshes'
+		IDDblMap(713, 1, 716, 2, 717, 3, 718, 4, 719, 5)
+		$begin 'DataMap'
+			VID=47
+			Ver=0
+			M(DblID=718, Dir='DV47_S652_V0.cmesh718/')
+			M(DblID=719, Dir='DV47_S652_V0.cmesh719/')
+		$end 'DataMap'
+	$end 'CurrMeshes'
+	$begin 'LastPassNumbers'
+		LP(VID=47, Ver=0, P=4)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=47, Ver=0, File='DV47_S652_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=47, Ver=0, Dir='DV47_S652_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+	$begin 'MeshGeomInfo'
+		MGI(VID=47, Ver=0, Dir='DV47_S652_V0_MGI/')
+	$end 'MeshGeomInfo'
+$end 'SolutionBlock54'
+$begin 'SolutionBlock55'
+	ConvSetupName='eConv'
+	MaxPasses='10'
+	MinPasses='2'
+	ConvTarget='(1, 1)'
+	ConvTargetConsecPasses='N/A'
+	ConvCurrentConsecPasses='N/A'
+	c(de_ee='(7.4162, N/A)', te=1.905871196348876e-007, tri=150, ee=7.416248046166525, p=1)
+	c(de_ee='(0.93869, 5.2057)', de=5.205669636447059, te=1.806657838170752e-007, tri=200, ee=0.9386864777121771, p=2)
+	c(de_ee='(0.78843, 2.2445)', de=2.244464622401801, te=1.76610804214516e-007, tri=260, ee=0.7884279821799788, p=3)
+	c(de_ee='(0.52965, 0.89031)', de=0.8903129637237788, te=1.750384153292574e-007, tri=346, ee=0.5296496630020726, p=4)
+$end 'SolutionBlock55'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock55(pos=2888, lin=103, lvl=0)
+		BlockMapName(pos=870, lin=24, lvl=0)
+		SolutionBlock52(pos=1346, lin=31, lvl=0)
+		SolutionBlock53(pos=1742, lin=51, lvl=0)
+		SolutionBlock54(pos=2168, lin=73, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=3510, lin=115, lvl=0)
+	$end '$index$'
+$end '$index$'

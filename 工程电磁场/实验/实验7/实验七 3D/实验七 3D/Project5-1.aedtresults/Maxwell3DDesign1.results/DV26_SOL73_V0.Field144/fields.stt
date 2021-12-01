@@ -1,0 +1,13 @@
+minimum_dimension 3.00000000000001e-011
+residual -1.00000000000000e+000
+percent_refinement 3.00000000000000e+001
+nonlinear_residual 1.00000000000000e-004
+deformation_dependent_object 0
+shape_order 0
+mult no
+sing 5.00000000000000e+001
+adapt_data 1 5.00000000000000e+001 0
+freq_type Hz
+adapt_choice 1
+SYMMETRY_MULTIPLIER 1.00000000000000e+000
+end

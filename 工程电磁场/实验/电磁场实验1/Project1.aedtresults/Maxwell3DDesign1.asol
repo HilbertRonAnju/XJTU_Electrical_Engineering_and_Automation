@@ -1,0 +1,34 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002020, month=000000000005, day=000000000019, hour=000000000018, min=000000000057, sec=000000000056)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000000691, lin=000000000017, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='Maxwell3DDesign1'
+	VersionID=0
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=2
+	MoveBackwards=false
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'MI'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+$end 'BlockMapName'
+$begin '$index$'
+	$begin '$index$'
+		BlockMapName(pos=620, lin=14, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=691, lin=17, lvl=0)
+	$end '$index$'
+$end '$index$'

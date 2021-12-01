@@ -1,0 +1,7 @@
+$begin 'Field Header'
+	BigEndian=false
+	DataFormat='BINARY'
+	DataPrecision='Float'
+	FirstLineFormat='int int int int int int'
+	OtherLineFormat='int char float float ...'
+$end 'Field Header'

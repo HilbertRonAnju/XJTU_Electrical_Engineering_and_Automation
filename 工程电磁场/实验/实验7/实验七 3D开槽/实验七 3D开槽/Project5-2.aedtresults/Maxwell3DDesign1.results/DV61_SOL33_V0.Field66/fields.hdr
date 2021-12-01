@@ -1,0 +1,7 @@
+$begin 'Field Header'
+   BigEndian=false
+   DataFormat='BINARY'
+   DataPrecision='Double'
+   DoublePrecisionFiles='hlo blo'
+   Version=3.0
+$end 'Field Header'

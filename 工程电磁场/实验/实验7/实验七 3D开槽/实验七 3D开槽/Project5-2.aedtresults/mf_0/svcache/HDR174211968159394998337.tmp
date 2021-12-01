@@ -1,0 +1,18 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=0
+	MoveBackwards=false
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=0
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=32
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=33
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
+$end 'SimValueCache'
