@@ -1,0 +1,1286 @@
+# $Revision: 1.1.6.2 $
+Model {
+  Name			  "three_phase_csi"
+  Version		  6.1
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.39"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "US-ASCII"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Jun 18 09:13:08 1999"
+  Creator		  "patrice"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "ThinkPad"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Jul 13 00:40:17 2012"
+  ModelVersionFormat	  "1.%<AutoIncrement:39>"
+  ConfigurationManager	  "none"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  BufferReuse		  on
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.0.4"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.0.4"
+	  StartTime		  "0.0"
+	  StopTime		  "0.2"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  RelTol		  "1e-3"
+	  SolverMode		  "SingleTasking"
+	  Solver		  "ode23tb"
+	  SolverName		  "ode23tb"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.0.4"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "sigsOut"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "InitFltsAndDblsToZero"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.0.4"
+	  BlockReduction	  on
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  ConditionalExecOptimization "on_for_testing"
+	  InlineParams		  off
+	  InlineInvariantSignals  on
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  ParameterPooling	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.0.4"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterPrecisionLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.0.4"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.0.4"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.0.4"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  TemplateMakefile	  "grt_unix.tmf"
+	  Description		  "Generic Real-Time Target"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Array {
+		Type			"Cell"
+		Dimension		9
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.0.4"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      CustomSymbolStr	      "$R$N$M"
+	      MangleLength	      1
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.0.4"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      SimulationMode	      "normal"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      PulseType		      "Sample based"
+      TimeSource	      "Use simulation time"
+      Amplitude		      "1"
+      Period		      "2"
+      PulseWidth	      "1"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      PMComponent
+      SubClassName	      "unknown"
+    }
+    Block {
+      BlockType		      PMIOPort
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "three_phase_csi"
+    Location		    [7, 84, 640, 753]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "C"
+      Ports		      [0, 0, 0, 0, 0, 3, 3]
+      Position		      [447, 305, 493, 375]
+      Orientation	      "up"
+      NamePlacement	      "alternate"
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Elements/Three-Phase\nSeries RLC Branc"
+"h"
+      SourceType	      "Three-Phase Series RLC Branch"
+      PhysicalDomain	      "powersysdomain"
+      SubClassName	      "unknown"
+      LeftPortType	      "p1"
+      RightPortType	      "p1"
+      LConnTagsString	      "A|B|C"
+      RConnTagsString	      "A|B|C"
+      Resistance	      "0"
+      Inductance	      "0"
+      Capacitance	      "1e-4"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "GTO1"
+      Ports		      [1, 1, 0, 0, 0, 1, 1]
+      Position		      [120, 95, 160, 155]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Power\nElectronics/Gto"
+      SourceType	      "Gto"
+      ShowPortLabels	      on
+      Ron		      "0.01"
+      Lon		      "1e-6"
+      Vf		      "1"
+      Tf		      "10e-6"
+      Tt		      "20e-6"
+      IC		      "0"
+      Rs		      "100"
+      Cs		      "1e-6"
+      Measurements	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "GTO2"
+      Ports		      [1, 1, 0, 0, 0, 1, 1]
+      Position		      [350, 280, 390, 340]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Power\nElectronics/Gto"
+      SourceType	      "Gto"
+      ShowPortLabels	      on
+      Ron		      "0.01"
+      Lon		      "1e-6"
+      Vf		      "1"
+      Tf		      "10e-6"
+      Tt		      "20e-6"
+      IC		      "0"
+      Rs		      "100"
+      Cs		      "1e-6"
+      Measurements	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "GTO3"
+      Ports		      [1, 1, 0, 0, 0, 1, 1]
+      Position		      [235, 90, 275, 150]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Power\nElectronics/Gto"
+      SourceType	      "Gto"
+      ShowPortLabels	      on
+      Ron		      "0.01"
+      Lon		      "1e-6"
+      Vf		      "1"
+      Tf		      "10e-6"
+      Tt		      "20e-6"
+      IC		      "0"
+      Rs		      "100"
+      Cs		      "1e-6"
+      Measurements	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "GTO4"
+      Ports		      [1, 1, 0, 0, 0, 1, 1]
+      Position		      [120, 280, 160, 340]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Power\nElectronics/Gto"
+      SourceType	      "Gto"
+      ShowPortLabels	      on
+      Ron		      "0.01"
+      Lon		      "1e-6"
+      Vf		      "1"
+      Tf		      "10e-6"
+      Tt		      "20e-6"
+      IC		      "0"
+      Rs		      "100"
+      Cs		      "1e-6"
+      Measurements	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "GTO5"
+      Ports		      [1, 1, 0, 0, 0, 1, 1]
+      Position		      [350, 90, 390, 150]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Power\nElectronics/Gto"
+      SourceType	      "Gto"
+      ShowPortLabels	      on
+      Ron		      "0.01"
+      Lon		      "1e-6"
+      Vf		      "1"
+      Tf		      "10e-6"
+      Tt		      "20e-6"
+      IC		      "0"
+      Rs		      "100"
+      Cs		      "1e-6"
+      Measurements	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "GTO6"
+      Ports		      [1, 1, 0, 0, 0, 1, 1]
+      Position		      [235, 280, 275, 340]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Power\nElectronics/Gto"
+      SourceType	      "Gto"
+      ShowPortLabels	      on
+      Ron		      "0.01"
+      Lon		      "1e-6"
+      Vf		      "1"
+      Tf		      "10e-6"
+      Tt		      "20e-6"
+      IC		      "0"
+      Rs		      "100"
+      Cs		      "1e-6"
+      Measurements	      on
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Gate\nDrive1"
+      Ports		      [0, 1]
+      Position		      [80, 69, 115, 91]
+      ForegroundColor	      "blue"
+      PulseType		      "Time based"
+      Period		      "0.02"
+      PulseWidth	      "33.4"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Gate\nDrive2"
+      Ports		      [0, 1]
+      Position		      [310, 254, 345, 276]
+      ForegroundColor	      "blue"
+      PulseType		      "Time based"
+      Period		      "0.02"
+      PulseWidth	      "33.4"
+      PhaseDelay	      "0.00333"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Gate\nDrive3"
+      Ports		      [0, 1]
+      Position		      [195, 64, 230, 86]
+      ForegroundColor	      "blue"
+      PulseType		      "Time based"
+      Period		      "0.02"
+      PulseWidth	      "33.4"
+      PhaseDelay	      "0.00667"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Gate\nDrive4"
+      Ports		      [0, 1]
+      Position		      [195, 254, 230, 276]
+      ForegroundColor	      "blue"
+      PulseType		      "Time based"
+      Period		      "0.02"
+      PulseWidth	      "33.4"
+      PhaseDelay	      "0.01667"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Gate\nDrive5"
+      Ports		      [0, 1]
+      Position		      [305, 64, 340, 86]
+      ForegroundColor	      "blue"
+      PulseType		      "Time based"
+      Period		      "0.02"
+      PulseWidth	      "33.4"
+      PhaseDelay	      "0.01333"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Gate\nDrive6"
+      Ports		      [0, 1]
+      Position		      [75, 254, 110, 276]
+      ForegroundColor	      "blue"
+      PulseType		      "Time based"
+      Period		      "0.02"
+      PulseWidth	      "33.4"
+      PhaseDelay	      "0.01"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "L"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [50, 47, 95, 73]
+      Orientation	      "left"
+      NamePlacement	      "alternate"
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      PhysicalDomain	      "powersysdomain"
+      SubClassName	      "unknown"
+      LeftPortType	      "p1"
+      RightPortType	      "p1"
+      LConnTagsString	      "__new0"
+      RConnTagsString	      "__new0"
+      Resistance	      "0"
+      Inductance	      "2e-02"
+      Capacitance	      "inf"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Load"
+      Ports		      [0, 0, 0, 0, 0, 3, 3]
+      Position		      [500, 192, 575, 248]
+      NamePlacement	      "alternate"
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Elements/Three-Phase\nSeries RLC Branc"
+"h"
+      SourceType	      "Three-Phase Series RLC Branch"
+      PhysicalDomain	      "powersysdomain"
+      SubClassName	      "unknown"
+      LeftPortType	      "p1"
+      RightPortType	      "p1"
+      LConnTagsString	      "A|B|C"
+      RConnTagsString	      "A|B|C"
+      Resistance	      "8"
+      Inductance	      "5e-3"
+      Capacitance	      "inf"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [4]
+      Position		      [625, 88, 675, 187]
+      Location		      [649, 56, 1275, 794]
+      Open		      on
+      NumInputPorts	      "4"
+      List {
+	ListType		AxesTitles
+	axes1			"iU"
+	axes2			"iV"
+	axes3			"iW"
+	axes4			"uUV"
+      }
+      TimeRange		      "0.1"
+      YMin		      "-20~-20~-20~-400"
+      YMax		      "20~20~20~400"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator1"
+      Position		      [238, 165, 252, 175]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator2"
+      Position		      [353, 165, 367, 175]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator4"
+      Position		      [123, 170, 137, 180]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator5"
+      Position		      [123, 360, 137, 370]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator6"
+      Position		      [238, 360, 252, 370]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator7"
+      Position		      [353, 360, 367, 370]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "U = 200 V"
+      Description	      "source block"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [15, 215, 35, 250]
+      Orientation	      "up"
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Electrical\nSources/DC Voltage Source"
+      SourceType	      "DC Voltage Source"
+      ShowPortLabels	      on
+      Amplitude		      "200"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "iU"
+      Tag		      "PoWeRsYsTeMmEaSuReMeNt"
+      Ports		      [0, 1, 0, 0, 0, 1, 1]
+      Position		      [200, 176, 220, 194]
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Measurements/Current Measurement"
+      SourceType	      "Current Measurement"
+      ShowPortLabels	      on
+      PhasorSimulation	      off
+      OutputType	      "Magnitude"
+      PSBequivalent	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "iV"
+      Tag		      "PoWeRsYsTeMmEaSuReMeNt"
+      Ports		      [0, 1, 0, 0, 0, 1, 1]
+      Position		      [315, 206, 335, 224]
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Measurements/Current Measurement"
+      SourceType	      "Current Measurement"
+      ShowPortLabels	      on
+      PhasorSimulation	      off
+      OutputType	      "Magnitude"
+      PSBequivalent	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "iW"
+      Tag		      "PoWeRsYsTeMmEaSuReMeNt"
+      Ports		      [0, 1, 0, 0, 0, 1, 1]
+      Position		      [405, 241, 425, 259]
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Measurements/Current Measurement"
+      SourceType	      "Current Measurement"
+      ShowPortLabels	      on
+      PhasorSimulation	      off
+      OutputType	      "Magnitude"
+      PSBequivalent	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "uUV"
+      Tag		      "PoWeRsYsTeMmEaSuReMeNt"
+      Ports		      [0, 1, 0, 0, 0, 2]
+      Position		      [555, 268, 580, 292]
+      AttributesFormatString  "\\n"
+      SourceBlock	      "powerlib/Measurements/Voltage Measurement"
+      SourceType	      "Voltage Measurement"
+      ShowPortLabels	      on
+      PhasorSimulation	      off
+      OutputType	      "Magnitude"
+      PSBequivalent	      "0"
+      Port {
+	PortNumber		1
+	Name			"Vload"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+	ShowSigGenPortName	on
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      Points		      [265, 380; -115, 0]
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"GTO2"
+	SrcPort			RConn1
+	Points			[0, 25; -115, 0]
+      }
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"GTO6"
+	SrcPort			RConn1
+	Points			[0, 25]
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[-125, 0]
+	DstBlock		"U = 200 V"
+	DstPort			LConn1
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"GTO4"
+	SrcPort			RConn1
+	Points			[0, 25]
+      }
+    }
+    Line {
+      Name		      "Vload"
+      SrcBlock		      "uUV"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "Scope"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Gate\nDrive1"
+      SrcPort		      1
+      DstBlock		      "GTO1"
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "U = 200 V"
+      SrcPort		      RConn1
+      Points		      [0, -140]
+      DstBlock		      "L"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      Points		      [265, 60; -115, 0]
+      Branch {
+	ConnectType		"SRC_SRC"
+	Points			[115, 0]
+	DstBlock		"GTO5"
+	DstPort			LConn1
+      }
+      Branch {
+	ConnectType		"SRC_SRC"
+	DstBlock		"GTO3"
+	DstPort			LConn1
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"GTO1"
+	DstPort			LConn1
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"L"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      Points		      [455, 190; 0, 10; 30, 0]
+      DstBlock		      "Load"
+      DstPort		      LConn1
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"iU"
+	SrcPort			RConn1
+	Points			[220, 0; 0, 0]
+      }
+      Branch {
+	ConnectType		"SRC_DEST"
+	Points			[455, 275; 0, -85]
+	Branch {
+	  ConnectType		  "SRC_DEST"
+	  SrcBlock		  "C"
+	  SrcPort		  RConn1
+	  Points		  [0, 0; 0, -15]
+	}
+	Branch {
+	  ConnectType		  "SRC_SRC"
+	  DstBlock		  "uUV"
+	  DstPort		  LConn1
+	}
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "C"
+      SrcPort		      RConn2
+      Points		      [0, 0; 0, -5]
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[0, -65]
+	Branch {
+	  ConnectType		  "DEST_SRC"
+	  DstBlock		  "Load"
+	  DstPort		  LConn2
+	}
+	Branch {
+	  ConnectType		  "DEST_DEST"
+	  SrcBlock		  "iV"
+	  SrcPort		  RConn1
+	  Points		  [120, 0]
+	}
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"uUV"
+	DstPort			LConn2
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "C"
+      SrcPort		      RConn3
+      Points		      [0, 0; 0, -50]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"Load"
+	DstPort			LConn3
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"iW"
+	SrcPort			RConn1
+	Points			[0, -15; 45, 0]
+      }
+    }
+    Line {
+      SrcBlock		      "Gate\nDrive3"
+      SrcPort		      1
+      DstBlock		      "GTO3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gate\nDrive5"
+      SrcPort		      1
+      DstBlock		      "GTO5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gate\nDrive2"
+      SrcPort		      1
+      DstBlock		      "GTO2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gate\nDrive4"
+      SrcPort		      1
+      DstBlock		      "GTO6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gate\nDrive6"
+      SrcPort		      1
+      DstBlock		      "GTO4"
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Load"
+      SrcPort		      RConn1
+      Points		      [0, 0; 0, 20]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"Load"
+	DstPort			RConn3
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"Load"
+	SrcPort			RConn2
+	Points			[0, 0]
+      }
+    }
+    Line {
+      SrcBlock		      "iU"
+      SrcPort		      1
+      Points		      [185, 0; 0, -80]
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "GTO4"
+      SrcPort		      LConn1
+      Points		      [0, 0; 0, -80]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"GTO1"
+	DstPort			RConn1
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"iU"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "GTO2"
+      SrcPort		      LConn1
+      Points		      [0, 0; 0, -15]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"GTO5"
+	DstPort			RConn1
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"iW"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "GTO6"
+      SrcPort		      LConn1
+      Points		      [0, 0; 0, -50]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"GTO3"
+	DstPort			RConn1
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"iV"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      SrcBlock		      "iV"
+      SrcPort		      1
+      Points		      [80, 0; 0, -85]
+      DstBlock		      "Scope"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "iW"
+      SrcPort		      1
+      Points		      [0, -95]
+      DstBlock		      "Scope"
+      DstPort		      3
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "C"
+      SrcPort		      LConn3
+      Points		      [0, 0; -15, 0]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"C"
+	DstPort			LConn1
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"C"
+	DstPort			LConn2
+      }
+    }
+    Line {
+      SrcBlock		      "GTO4"
+      SrcPort		      1
+      DstBlock		      "Terminator5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "GTO6"
+      SrcPort		      1
+      DstBlock		      "Terminator6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "GTO2"
+      SrcPort		      1
+      DstBlock		      "Terminator7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "GTO1"
+      SrcPort		      1
+      DstBlock		      "Terminator4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "GTO3"
+      SrcPort		      1
+      DstBlock		      "Terminator1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "GTO5"
+      SrcPort		      1
+      DstBlock		      "Terminator2"
+      DstPort		      1
+    }
+  }
+}

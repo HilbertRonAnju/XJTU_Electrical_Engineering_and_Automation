@@ -1,0 +1,244 @@
+<html>  <head>  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Model Advisor Report Customization</title>  
+<style>  
+H3 {font-size:14pt; font-weight:200;}  
+H4 {font-size:9pt; font-weight:normal;}  
+
+</style>  
+</head>  
+<body>  
+<H3 align="center">Model Advisor Customization </H3>  
+
+<p align="right"><a href="matlab: modeladvisor 'help'"><b>Help</b></a></p>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check rapid accelerator signal logging</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckRapidAcceleratorSignalLogging</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify Model Variants blocks and convert those to Variant Subsystem blocks containing Model block choices</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.ConvertMdlrefVarToVSS</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check get_param calls for block CompiledSampleTime</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CallsGetParamCompiledSampleTime</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify unconnected lines, input ports, and output ports</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.UnconnectedLinesPorts</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check root model Inport block specifications</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.RootInportSpec</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check diagnostic settings ignored during accelerated model reference simulation</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.ModelRefSIMConfigCompliance</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for parameter tunability information ignored for referenced models</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.ParamTunabilityIgnored</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for implicit signal resolution</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.ImplicitSignalResolution</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for optimal bus virtuality</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.OptBusVirtuality</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for calls to slDataTypeAndScale()</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CallslDataTypeAndScale</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for Discrete-Time Integrator blocks with initial condition uncertainty</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.DiscreteTimeIntegratorInitCondition</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify disabled library links</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.DisabledLibLinks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify parameterized library links</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.ParameterizedLibLinks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify unresolved library links</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.UnresolvedLibLinks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify configurable subsystem blocks for converting to variant subsystem blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CSStoVSSConvert</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check usage of function-call connections</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckForProperFcnCallUsage</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check and update masked blocks in library to use promoted parameters</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckAndUpdateOldMaskedBuiltinBlocks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check and update mask image display commands with unnecessary imread() function calls</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckMaskDisplayImageFormat</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check and update mask to affirm icon drawing commands dependency on mask workspace</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckMaskRunInitFlag</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify similar library clones and replace them with links to library blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.CloneDetection.IdentifyStructLibraryClones</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify similar graphical clones and replace them with links to library blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.CloneDetection.IdentifyStructGraphicalClones</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify system constants for use in variant transformation</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.MdlTransformer.IdentifyVariantConstant</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify blocks that qualify for variant transformation</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.MdlTransformer.IdentifyVariantCandidate</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Convert blocks to variants</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.MdlTransformer.VariantTransform</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Step1. Select data store blocks you want to eliminate</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.MdlTransformer.DSMElim</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Lookup Table Transformation</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.MdlTransformer.LutXform</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Create baseline to measure the performance. The baseline contains the time to run the simulation and the simulation results (signals logged). To create a baseline, configure the model to log states in the workspace and save the signals in 'Structure with time' format.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CreateBaseline</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Some diagnostics, such as 'Solver data inconsistency', incur run-time overhead during simulation. To improve simulation speed, disable these diagnostics if they are not necessary.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.IdentifyExpensiveDiagnostics</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Some optimizations, such as 'Block reduction',  may be disabled. To improve  simulation speed, enable these optimization settings.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.IdentifyApplicableOptimizations</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Improperly configured lookup table blocks can affect the simulation speed of a model.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.InefficientLookupTableBlocks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Analyze MATLAB System block for code generation capability.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.DetectIntSysObjBlocks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Avoid using Interpreted MATLAB Function blocks.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.DetectIntMATLABFcnBlocks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Disabling simulation target settings, such as 'Echo expressions without semicolons', can improve simulation speed.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckSimTargetEchoStatus</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check if model reference rebuild setting is set to the proper value</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckModelRefRebuildSetting</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Opened and uncommented Scopes can impact simulation performance. This check identifies Scope block, Floating Scope block, and Scope Viewer. Scope Viewer does not support commenting out.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.IdentifyScopes</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify active instrumentation settings on the model. This setting can cause slow simulations due to range collection.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.IdentifyActiveMMO</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check S-functions in the model</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.SFuncAnalyzer</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check model and local libraries for SB2SL blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.simulink.SB2SL.Check</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check Simscape Solver Configuration block settings</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.simscape.performanceadvisor.checkSimscapeSolverBlock</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check Fluid dynamic compressibility option</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.simscape.performanceadvisor.checkFluidDynamicCompressibility</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check consistency of block parameter units</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.simscape.checkParameterUnits</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for outdated AC source blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.simscape.checkOutdatedBlocks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Runtime diagnostics for S-functions</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.DiagnosticSFcn</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check if Read/Write diagnostics are enabled for Data Store blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.DiagnosticDataStoreBlk</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check Data Store Memory blocks for multitasking, strong typing, and shadowing issues</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.DataStoreMemoryBlkIssue</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check that the model is saved in SLX format</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.UseSLXFile</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check model for foreign characters</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.characterEncoding</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check Model History properties</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.SLXModelProperties</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify masked blocks that specify tabs in mask dialog using MaskTabNames parameter</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckAndUpdateOldMaskTabnames</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check conversion input parameters</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.ModelReferenceAdvisor.InputParameters</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check model configurations</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.ModelReferenceAdvisor.ModelConfigurations</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check subsystem interface</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.ModelReferenceAdvisor.SubsystemInterface</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check subsystem content</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.ModelReferenceAdvisor.SubsystemContent</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Complete conversion</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.ModelReferenceAdvisor.CompleteConversion</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify variant blocks using variant objects with empty conditions</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.emptyVariantObject</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify Model Info blocks that can interact with external source control tools</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.ModelInfoKeywordSubstitution</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Open the Upgrade Advisor</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.UpgradeAdvisor.MAEntryPoint</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Upgrade models in a hierarchy</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.UpgradeAdvisor.UpgradeModelHierarchy</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check model for block upgrade issues</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.Update</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Resave in current version of Simulink</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckSavedInCurrentVersion</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Return all simulation outputs as a single Simulink.SimulationOutput object</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckSingleSimulationOutput</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for virtual bus across model reference boundaries</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckVirtualBusAcrossModelReference</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check model for parameter initialization and tuning issues</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.ParameterTuning</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check structure parameter usage with bus signals</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.MismatchedBusParams</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for large number of function arguments from virtual bus across model reference boundary</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckVirtualBusAcrossModelReferenceArgs</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify similar functional clones and replace them with links to library blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.CloneDetection.IdentifyStructFunctionalClones</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check if model with referenced models can be built in parallel with optimal settings.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckModelRefParallelBuild</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Use circular buffer to improve simulation speed for Delay blocks with large states.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckDelayBlockCircularBufferSetting</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Simulation might slow down if all these conditions exist: (1) the model is using a variable step solver, (2) the model contains both continuous and discrete rates, and (3) the fastest discrete rate that does not impact continuous integration is relatively smaller than 'Max step size' determined by the solver. Setting 'DecoupledContinuousIntegration' parameter to 'on' might speed up simulation.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckIfNeedDecoupleContDiscRates</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Simulation might slow down if all these conditions exist: (1) the model is using a variable step solver, (2) the model contains blocks having zero-crossings and continuous states, and (3) some zero-crossings are not impacting continuous integration. Setting 'MinimalZcImpactIntegration' parameter to 'on' might speed up simulation.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckIfNeedOptimalSolverResetCausedByZc</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check discrete signals driving derivative port</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckDiscDriveContSignal</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>The selection of an explicit or implicit solver depends on the approximation of the model stiffness at the beginning of the simulation. If the model represents a stiff system, use the ode15s solver. Otherwise, use the ode45 solver.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.SolverTypeSelection</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Adjust co-simulation settings for better performance and accuracy.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckMultiThreadCoSimSetting</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify co-simulation signals that may need explicit numerical compensation.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckNumericCompensationCoSimSetting</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Changing simulation mode can improve simulation speed.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckSimulationModesComparison</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Running with compiler optimizations turned on can improve simulation speed.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.CheckSimulationCompilerOptimization</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Validate the overall performance improvement in your model using this check. If performance is worse than baseline, Performance Advisor discards all changes and loads the original model.</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.Simulink.PerformanceAdvisor.FinalValidation</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check relative execution orders for Data Store Read and Data Store Write blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>com.mathworks.sorting.datastorecheck</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check Delay, Unit Delay and Zero-Order Hold blocks for rate transition</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.ReplaceZOHDelayByRTB</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check bus signals treated as vectors</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.BusTreatedAsVector</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for potentially delayed function-call block return values</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.DelayedFcnCallSubsys</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify block output signals with continuous sample time and non-floating point data type</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.OutputSignalSampleTime</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check usage of Merge blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.MergeBlkUsage</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check usage of Outport blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.InitParamOutportMergeBlk</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check usage of Discrete-Time Integrator blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.DiscreteBlock</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check model settings for migration to simplified initialization mode</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.ModelLevelMessages</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check model for S-function upgrade issues</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckForSFcnUpgradeIssues</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for dry hydraulic nodes</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.simscape.checkDryHydraulicNodes</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check and update outdated Simscape Physical Signal blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.simscape.checkOutdatedPSBlocks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check usage of Simscape event variables with unspecified priority</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.simscape.checkUnspecifiedEventVariables</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for non-continuous signals driving derivative ports</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.NonContSigDerivPort</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check data store block sample times for modeling errors</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.DataStoreBlkSampleTime</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for potential ordering issues involving data store access</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.OrderingDataStoreAccess</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check virtual bus inputs to blocks</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.VirtualBusUsage</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check for root outports with constant sample time</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.CheckConstRootOutportWithInterfaceUpgrade</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify unit mismatches in the model</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.UnitMismatches</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify automatic unit conversions in the model</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.AutoUnitConversions</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify disallowed unit systems in the model</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.DisallowedUnitSystems</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify undefined units in the model</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.UndefinedUnits</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Check model for block upgrade issues requiring compile time information</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.UpdateRequireCompile</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Title</b></td><td>&#160;&#160;</td><td>Identify questionable operations for strict single-precision design</td></tr><tr><td><b>TitleID</b></td><td>&#160;&#160;</td><td>mathworks.design.StowawayDoubles</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td height="20"> </td><td> </td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Modeling Physical Systems</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Modeling Signals and Parameters using Buses</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Modeling Single-Precision Systems</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Migrating to Simplified Initialization mode</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Model Referencing</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Managing Library Links And Variants</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Data Transfer Efficiency</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>S-function Checks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Simulation Accuracy</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Simulation Runtime Accuracy Diagnostics</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Managing Data Store Memory Blocks</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Simulink Model File Integrity</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Units Inconsistencies</td></tr>
+<tr><td height="20"></td></tr>
+<tr><td><b>Task Name</b></td><td>&#160;&#160;</td><td>Upgrading to the Current Simulink Version</td></tr>
+<tr><td height="20"></td></tr>
+</table>
