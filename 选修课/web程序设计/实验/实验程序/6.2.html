@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javasrcipt">
+	function isprime(n)
+	{
+		var k,i;
+		k=Math.sqrt(n);
+		for(i=2;i<=k;i++)
+		{
+			if(n%i==0)
+				return 0;
+		}
+		return 1;
+	}
+	function btnClick()
+	{
+		var x=parseFloat(document.getElementById("Text1").value);
+		var y=document.getElementById("Text2");
+		if(isprime(x)==1)
+			y.value=x+"是素数"
+		else
+			y.value=x+"不是素数";
+	}
+</script>
+</head>
+<body>
+<h1>判断素数</h1>
+整数<input id="Text1" type="text" /><br />
+结果<input id="Text2" type="text" /><br />
+<input id="Button1" type="button" value="计算" onclick="btnClick()"/>　
+<input id="Reset1"  type="reset" value="清空" />
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+    function btnClick() {
+        var x = document.getElementById("textfield").value;
+        if (x.length != 10)
+            alert("学号长度应为10位");
+        else
+            alert("OK");
+    } 
+</script>
+</head>
+
+<body>
+<h1>个人信息</h1>
+<form id="form1" name="form1" method="post" action="">
+学号<input type="text" name="textfield" id="textfield" />
+  <br />
+姓名<input type="text" name="textfield2" id="textfield2" />
+<br />
+专业<input type="text" name="textfield3" id="textfield3" />
+<br />
+<input type="button" name="button" id="button" value="提交" onclick="btnClick()"/> 
+<input type="reset" name="button2" id="button2" value="清空" />
+<br />
+</form>
+</body>
+</html>

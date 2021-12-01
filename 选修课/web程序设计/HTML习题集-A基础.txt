@@ -1,0 +1,116 @@
+【例A1】一个简单的 HTML 文件
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>我的第一个 HTML 页面</title>
+</head>
+<body>
+<p>body 元素的内容会显示在浏览器中。</p>
+<p>title 元素的内容会显示在浏览器的标题栏中。</p>
+</body>
+</html>
+【例A2】简单的段落
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+<p>这是段落。</p>
+<p>这是段落。</p>
+<p>这是段落。</p>
+<p>段落元素由 p 标签定义。</p> 
+</body>
+</html>
+【例A3】更多的段落
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+<p>
+这个段落
+在源代码中
+包含许多行
+但是浏览器
+忽略了它们。
+</p>
+<p>
+这个段落
+在源代码       中
+包含   许多行
+但是      浏览器
+忽略了  它们。
+</p>
+</body>
+</html>
+【例A4】“诗歌”问题
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+<h1>春晓</h1>
+<p>
+    春眠不觉晓，
+      处处闻啼鸟。
+        夜来风雨声，
+          花落知多少。
+</p>
+<p>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。</p>
+</body>
+</html>
+【例A5】折行
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+<p>
+To break<br />lines<br />in a<br />paragraph,<br />use the br tag.
+</p>
+</body>
+</html>
+【例A6】标题
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+<p>请仅仅把标题标签用于标题文本。不要仅仅为了产生粗体文本而使用它们。请使用其它标签或 CSS 代替。</p>
+</body>
+</html>
+【例A7】居中排列的标题
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+<h1 align="center">This is heading 1</h1>
+<p>上面的标题在页面中进行了居中排列。上面的标题在页面中进行了居中排列。上面的标题在页面中进行了居中排列。</p>
+</body>
+</html>
+【例A8】水平线
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+<p>hr 标签定义水平线：</p>
+<hr />
+<p>这是段落。</p>
+<hr />
+<p>这是段落。</p>
+<hr />
+<p>这是段落。</p>
+</body>
+</html>
+【例A9】隐藏的注释
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+<!--这是一段注释。注释不会在浏览器中显示。-->
+<p>这是一段普通的段落。</p>
+</body>
+</html>
+【例A10】背景颜色
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+</head>
+<body bgcolor="yellow">
+<h2>请看: 改变了颜色的背景。</h2>
+</body>
+</html>

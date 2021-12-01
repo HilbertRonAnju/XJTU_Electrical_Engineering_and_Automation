@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+	function btnClick()
+	{
+		var zs,result;
+		zs=document.getElementById("Text1");
+		result=document.getElementById("Text2");
+		for(result.value=1;zs.value>=1;zs.value--)
+		{
+			result.value=result.value*zs.value;
+		}
+	}
+</script>
+</head>
+<body>
+<h1>计算阶乘</h1>
+整数<input id="Text1" type="text" /><br />
+结果<input id="Text2" type="text" /><br />
+<input id="Button1" type="button" value="计算" onclick="btnClick()"/>　
+<input id="Reset1"  type="reset" value="清空" />
+</body>
+</html>

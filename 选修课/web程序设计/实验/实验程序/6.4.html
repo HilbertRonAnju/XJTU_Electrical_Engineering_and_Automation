@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+	function btnClick()
+	{
+		var x=document.getElementById("TextArea1");
+		var i,j;
+		z="";
+		for(j=1;j<=10;j++){
+			y="";
+			for(i=1;i<=j;i++)
+				y=y+"*"
+			z=z+y+"\n";
+		}
+		x.value=z;
+	}
+</script>
+</head>
+<body onload="btnClick()">
+<textarea id="TextArea1" cols="20" rows="10"></textarea>
+</body>
+</html>

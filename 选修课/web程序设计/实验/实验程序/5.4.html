@@ -1,0 +1,24 @@
+<html>
+<body>
+<head>
+<script type="text/javascript">
+	function fuzhi()
+	{
+		var x=new String; 
+		x = document.getElementById("Text1");
+		var y=new String;
+		y = document.getElementById("Text2");
+		y.value=x.value;
+	}
+</script>
+</head>
+<h1>字符串复制</h1>
+<form>
+输入<input id="Text1" type="text"/><br/>
+重复<input id="Text2" type="text"/><br/>
+<input id="Button1"  type="button" value="开始" onclick="fuzhi()"/>
+<input id="Reset1"  type="reset" value="清空" />
+<br/>
+</form>
+</body>
+</html>

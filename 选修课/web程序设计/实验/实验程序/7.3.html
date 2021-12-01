@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+	function btnClick()
+	{
+		var zs,result,sum;
+		zs=document.getElementById("Text1");
+		result=document.getElementById("Text2");
+		for(i=1;i<=7;i++)
+		{
+			sum.value=sum.value+Math.pow(zs.value,i-1)*Math.pow(zs.value,2*i+1);
+		}
+		result.value=sum.value;
+	}
+</script>
+</head>
+<body>
+<h1>计算f(x)</h1>
+输入x=<input id="Text1" type="text" /><br />
+f(x)=<input id="Text2" type="text" align="center"/><br />
+<input id="Button1" type="button" value="计算" onclick="btnClick()"/>　
+<input id="Reset1"  type="reset" value="清空" />
+</body>
+</html>
+0.0269999999999999960.00072899999999999980.0000196829999999999945.314409999999998e

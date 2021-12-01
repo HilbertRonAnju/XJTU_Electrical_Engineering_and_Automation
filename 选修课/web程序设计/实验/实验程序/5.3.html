@@ -1,0 +1,30 @@
+<html>
+<body>
+<head>
+<script>
+	function maxmin()
+	{
+		var a = document.getElementById("Text1").value;
+		var b = document.getElementById("Text2").value;
+		var max = document.getElementById("Text3");
+		var min = document.getElementById("Text4");
+		if (a>b)
+		{max.value=a;min.value=b;}
+		else
+		{max.value=b;min.value=a;}
+	}
+</script>
+</head>
+<h1>
+求最大值和最小值
+</h1>
+<form>
+第一个数<input id="Text1" type="text"/><br/>
+第二个数<input id="Text2" type="text"/><br/>
+最&nbsp大&nbsp值<input id="Text3" type="text"/><br/>
+最&nbsp小&nbsp值<input id="Text4" type="text"/><br/>
+<input id="Botton1" type="button" value="计算" onclick="maxmin()"/>
+<input id="Reset1"  type="reset" value="清空" />
+</form>
+</body>
+</html>
