@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  1 20:28:47 2020
+# Process ID: 14464
+# Current directory: C:/Users/96547/Desktop/vivado_project/project_counter/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13960 C:\Users\96547\Desktop\vivado_project\project_counter\project_1\project_1.xpr
+# Log file: C:/Users/96547/Desktop/vivado_project/project_counter/project_1/vivado.log
+# Journal file: C:/Users/96547/Desktop/vivado_project/project_counter/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/96547/Desktop/vivado_project/project_counter/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/96547/Desktop/vivado_project/project_counter/project_1/sim_trans38_behav.wcfg
+source sim_shiftreg.tcl
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_sim

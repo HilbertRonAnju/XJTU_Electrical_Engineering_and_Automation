@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 18 08:13:25 2020
+# Process ID: 14928
+# Current directory: C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.runs/impl_1
+# Command line: vivado.exe -log counter25_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source counter25_top.tcl -notrace
+# Log file: C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.runs/impl_1/counter25_top.vdi
+# Journal file: C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source counter25_top.tcl -notrace

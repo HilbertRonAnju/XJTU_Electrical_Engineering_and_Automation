@@ -1,0 +1,82 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Jul 24 16:19:27 2020
+| Host         : AlexD-Desktop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_piano_control_sets_placed.rpt
+| Design       : top_piano
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    45 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              60 |           49 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              75 |           23 |
+| Yes          | No                    | No                     |              37 |           17 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              23 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------+------------------------------------+------------------------------------+------------------+----------------+
+|     Clock Signal     |            Enable Signal           |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------------+------------------------------------+------------------------------------+------------------+----------------+
+|  u_clk/inst/clk_out1 |                                    |                                    |                1 |              2 |
+|  clk_IBUF_BUFG       | u0/ps2/n_reg[3]_i_1_n_0            |                                    |                1 |              4 |
+|  clk_8hz             | nolabel_line81/couter3[6]_i_1_n_0  | nolabel_line81/couter3[7]_i_1_n_0  |                2 |              6 |
+|  clk_8hz             | nolabel_line81/musickey0           |                                    |                5 |              6 |
+|  clk_8hz             |                                    |                                    |                4 |              7 |
+|  clk_8hz             | nolabel_line81/couter3[6]_i_1_n_0  | nolabel_line81/couter7[7]_i_1_n_0  |                5 |              7 |
+|  clk_IBUF_BUFG       | u0/ps2/E[0]                        |                                    |                2 |              8 |
+|  clk_8hz             | nolabel_line81/couter3[6]_i_1_n_0  |                                    |                6 |              9 |
+|  clk_IBUF_BUFG       | u0/ps2/b_reg[10]_i_1_n_0           |                                    |                3 |             10 |
+|  u_clk/inst/clk_out1 | vga1/vga_syn_inst/y_cnt[9]_i_2_n_0 | vga1/vga_syn_inst/y_cnt[9]_i_1_n_0 |                5 |             10 |
+|  u_clk/inst/clk_out1 |                                    | vga1/vga_syn_inst/SS[0]            |                8 |             11 |
+|  clk_IBUF_BUFG       |                                    | nolabel_line87/yinfu_reg__0[7]     |                7 |             32 |
+|  clk_IBUF_BUFG       |                                    | nolabel_line81/clear               |                8 |             32 |
+|  clk_IBUF_BUFG       |                                    |                                    |               44 |             51 |
++----------------------+------------------------------------+------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 4      |                     1 |
+| 6      |                     2 |
+| 7      |                     2 |
+| 8      |                     1 |
+| 9      |                     1 |
+| 10     |                     2 |
+| 11     |                     1 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+

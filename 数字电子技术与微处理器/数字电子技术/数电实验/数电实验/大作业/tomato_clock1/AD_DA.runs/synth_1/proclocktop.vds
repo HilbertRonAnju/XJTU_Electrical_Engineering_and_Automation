@@ -1,0 +1,524 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec  1 22:07:36 2020
+# Process ID: 12844
+# Current directory: G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.runs/synth_1
+# Command line: vivado.exe -log proclocktop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source proclocktop.tcl
+# Log file: G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.runs/synth_1/proclocktop.vds
+# Journal file: G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source proclocktop.tcl -notrace
+Command: synth_design -top proclocktop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11144 
+WARNING: [Synth 8-2507] parameter declaration becomes local in Sec_pule_generator with formal parameter declaration list [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/Sec_pule_generator.v:6]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 404.906 ; gain = 111.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'proclocktop' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwmctrl' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/pwmctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwmctrl' (1#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/pwmctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'XADC_channel_1' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/XADC_channel_1.v:2]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.runs/synth_1/.Xil/Vivado-12844-DESKTOP-H2P5GO8/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (2#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.runs/synth_1/.Xil/Vivado-12844-DESKTOP-H2P5GO8/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'duqu' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/duqu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'duqu' (3#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/duqu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'XADC_channel_1' (4#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/XADC_channel_1.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fanqiezhong_top' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/fanqiezhong_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Sec_pule_generator' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/Sec_pule_generator.v:2]
+	Parameter N bound to: 100000 - type: integer 
+	Parameter M bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Sec_pule_generator' (5#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/Sec_pule_generator.v:2]
+INFO: [Synth 8-6157] synthesizing module 'xiaodoudong' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/xiaodoudong.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'xiaodoudong' (6#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/xiaodoudong.v:2]
+INFO: [Synth 8-6157] synthesizing module 'counter25_top' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/counter25_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Sec_pule_generator__parameterized0' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/Sec_pule_generator.v:2]
+	Parameter N bound to: 1000000 - type: integer 
+	Parameter M bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Sec_pule_generator__parameterized0' (6#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/Sec_pule_generator.v:2]
+INFO: [Synth 8-6157] synthesizing module 'State' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/state.v:2]
+	Parameter IDLE bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+	Parameter S2 bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'State' (7#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/state.v:2]
+INFO: [Synth 8-6157] synthesizing module 'counter25' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/counter25.v:2]
+	Parameter MAXNOTIF bound to: 4'b1111 
+INFO: [Synth 8-226] default block is never used [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/counter25.v:173]
+WARNING: [Synth 8-5788] Register cnt25_reg in module counter25 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/counter25.v:37]
+WARNING: [Synth 8-5788] Register carry2_reg in module counter25 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/counter25.v:41]
+WARNING: [Synth 8-5788] Register innerbreak_reg in module counter25 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/counter25.v:45]
+WARNING: [Synth 8-5788] Register counter_reg in module counter25 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/counter25.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'counter25' (8#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/counter25.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'counter25_top' (9#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/counter25_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'edgecounter' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/edgecounter.v:23]
+WARNING: [Synth 8-151] case item 2'b10 is unreachable [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/edgecounter.v:71]
+WARNING: [Synth 8-151] case item 2'b11 is unreachable [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/edgecounter.v:72]
+INFO: [Synth 8-226] default block is never used [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/edgecounter.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'edgecounter' (10#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/edgecounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fanqiezhong_top' (11#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/fanqiezhong_top.v:2]
+WARNING: [Synth 8-350] instance 'nolabel_line89' of module 'xiaodoudong' requires 5 connections, but only 4 given [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:89]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:96]
+INFO: [Synth 8-6157] synthesizing module 'differenciator' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/differenciator.v:23]
+WARNING: [Synth 8-6104] Input port 'NumOut' has an internal driver [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/differenciator.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'differenciator' (12#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/differenciator.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:102]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:108]
+INFO: [Synth 8-6157] synthesizing module 'pressadjuster' [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/pressadjuster.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pressadjuster' (13#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/pressadjuster.v:23]
+WARNING: [Synth 8-3848] Net minadjout in module/entity proclocktop does not have driver. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:38]
+WARNING: [Synth 8-3848] Net secadjout in module/entity proclocktop does not have driver. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:38]
+WARNING: [Synth 8-3848] Net timerstout in module/entity proclocktop does not have driver. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'proclocktop' (14#1) [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:23]
+WARNING: [Synth 8-3331] design fanqiezhong_top has unconnected port an[5]
+WARNING: [Synth 8-3331] design fanqiezhong_top has unconnected port an[4]
+WARNING: [Synth 8-3331] design duqu has unconnected port do_out[7]
+WARNING: [Synth 8-3331] design duqu has unconnected port do_out[6]
+WARNING: [Synth 8-3331] design duqu has unconnected port do_out[5]
+WARNING: [Synth 8-3331] design duqu has unconnected port do_out[4]
+WARNING: [Synth 8-3331] design duqu has unconnected port do_out[3]
+WARNING: [Synth 8-3331] design duqu has unconnected port do_out[2]
+WARNING: [Synth 8-3331] design duqu has unconnected port do_out[1]
+WARNING: [Synth 8-3331] design duqu has unconnected port do_out[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 441.914 ; gain = 148.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin min:NumOut to constant 0 [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:96]
+WARNING: [Synth 8-3295] tying undriven pin sec:NumOut to constant 0 [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:102]
+WARNING: [Synth 8-3295] tying undriven pin timerst:NumOut to constant 0 [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:108]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line114:minadj to constant 0 [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:114]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line114:secadj to constant 0 [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:114]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line114:timerst to constant 0 [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/new/proclocktop.v:114]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 441.914 ; gain = 148.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 441.914 ; gain = 148.879
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'nolabel_line40/U1'
+Finished Parsing XDC File [g:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'nolabel_line40/U1'
+Parsing XDC File [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc:66]
+Finished Parsing XDC File [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/proclocktop_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.srcs/constrs_1/new/x.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/proclocktop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/proclocktop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 776.801 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 776.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 776.801 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 776.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 776.801 ; gain = 483.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 776.801 ; gain = 483.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for nolabel_line40/U1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 776.801 ; gain = 483.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "sec_pule" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sec_pule" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cnt25" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cnt25" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 776.801 ; gain = 483.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 9     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 5     
++---Registers : 
+	               20 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 17    
+	   3 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 8     
+	  14 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 12    
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module duqu 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Sec_pule_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module xiaodoudong 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module Sec_pule_generator__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module State 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module counter25 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 5     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 17    
+	   3 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 8     
+	  14 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 3     
+Module edgecounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	  14 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+Module differenciator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module pressadjuster 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module pwmctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "U1/U2/cnt25" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "U1/U2/carry20" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nolabel_line13/sec_pule" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U1/U0/sec_pule" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U1/U2/cnt25" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nolabel_line78/sec_pule" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design fanqiezhong_top has unconnected port an[5]
+WARNING: [Synth 8-3331] design fanqiezhong_top has unconnected port an[4]
+WARNING: [Synth 8-3332] Sequential element (nolabel_line67/U1/U2/counter_reg[3]_P) is unused and will be removed from module proclocktop.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line67/U1/U2/counter_reg[2]_P) is unused and will be removed from module proclocktop.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line67/U1/U2/counter_reg[1]_P) is unused and will be removed from module proclocktop.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line67/U1/U2/counter_reg[0]_P) is unused and will be removed from module proclocktop.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 776.801 ; gain = 483.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 777.957 ; gain = 484.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 778.551 ; gain = 485.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 808.391 ; gain = 515.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \nolabel_line40/U1  has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \nolabel_line40/U1  has unconnected pin vn_in
+WARNING: [Synth 8-3295] tying undriven pin i_21:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_22:a to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 808.391 ; gain = 515.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 808.391 ; gain = 515.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 808.391 ; gain = 515.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 808.391 ; gain = 515.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 808.391 ; gain = 515.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 808.391 ; gain = 515.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |xadc_wiz_0 |     1|
+|2     |BUFG       |     1|
+|3     |CARRY4     |    64|
+|4     |LUT1       |    30|
+|5     |LUT2       |   100|
+|6     |LUT3       |    47|
+|7     |LUT4       |   126|
+|8     |LUT5       |    78|
+|9     |LUT6       |   122|
+|10    |FDCE       |    59|
+|11    |FDRE       |   176|
+|12    |IBUF       |    10|
+|13    |OBUF       |    14|
+|14    |OBUFT      |     8|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-----------------------------------+------+
+|      |Instance                     |Module                             |Cells |
++------+-----------------------------+-----------------------------------+------+
+|1     |top                          |                                   |   861|
+|2     |  \ENLOOP[0].nolabel_line56  |pwmctrl                            |    66|
+|3     |  \ENLOOP[1].nolabel_line56  |pwmctrl_0                          |    21|
+|4     |  \ENLOOP[2].nolabel_line56  |pwmctrl_1                          |    21|
+|5     |  \ENLOOP[3].nolabel_line56  |pwmctrl_2                          |    21|
+|6     |  \ENLOOP[4].nolabel_line56  |pwmctrl_3                          |    21|
+|7     |  \ENLOOP[5].nolabel_line56  |pwmctrl_4                          |    21|
+|8     |  \ENLOOP[6].nolabel_line56  |pwmctrl_5                          |    21|
+|9     |  \ENLOOP[7].nolabel_line56  |pwmctrl_6                          |    21|
+|10    |  min                        |differenciator                     |     4|
+|11    |  nolabel_line114            |pressadjuster                      |    56|
+|12    |  nolabel_line40             |XADC_channel_1                     |   220|
+|13    |    U2                       |duqu                               |   194|
+|14    |  nolabel_line67             |fanqiezhong_top                    |   281|
+|15    |    U0                       |xiaodoudong_10                     |     8|
+|16    |    U1                       |counter25_top                      |   177|
+|17    |      U0                     |Sec_pule_generator__parameterized0 |    32|
+|18    |      U1                     |State                              |     5|
+|19    |      U2                     |counter25                          |   140|
+|20    |    U2                       |edgecounter                        |    64|
+|21    |    nolabel_line13           |Sec_pule_generator_11              |    32|
+|22    |  nolabel_line78             |Sec_pule_generator                 |    32|
+|23    |  nolabel_line82             |xiaodoudong                        |     6|
+|24    |  nolabel_line89             |xiaodoudong_7                      |     3|
+|25    |  sec                        |differenciator_8                   |     3|
+|26    |  timerst                    |differenciator_9                   |     4|
++------+-----------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 808.391 ; gain = 515.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 808.391 ; gain = 180.469
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 808.391 ; gain = 515.355
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 808.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 56 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 808.391 ; gain = 526.855
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 808.391 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/vivado_project/secretgarden/chineseseries/fanqiezhong_30_involvestar/AD_DA.runs/synth_1/proclocktop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file proclocktop_utilization_synth.rpt -pb proclocktop_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  1 22:08:14 2020...

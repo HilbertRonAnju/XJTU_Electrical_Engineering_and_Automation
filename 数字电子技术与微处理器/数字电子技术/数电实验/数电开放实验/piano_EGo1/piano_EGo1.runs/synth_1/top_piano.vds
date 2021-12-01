@@ -1,0 +1,647 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jul 24 16:17:43 2020
+# Process ID: 9948
+# Current directory: D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/synth_1
+# Command line: vivado.exe -log top_piano.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_piano.tcl
+# Log file: D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/synth_1/top_piano.vds
+# Journal file: D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_piano.tcl -notrace
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2017.4/data/boards/board_files/PYNQ-Z2 board file v1.0/A.0/board.xml:
+ Frequency Parameter not provided for audio_clock
+
+Command: synth_design -top top_piano -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17092 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 404.953 ; gain = 98.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_piano' [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/top_piano.v:21]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/keyboard.v:21]
+INFO: [Synth 8-638] synthesizing module 'ps2_rx' [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/ps2_rx.v:21]
+	Parameter idle bound to: 2'b00 
+	Parameter dps bound to: 2'b01 
+	Parameter load bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/ps2_rx.v:86]
+INFO: [Synth 8-256] done synthesizing module 'ps2_rx' (1#1) [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/ps2_rx.v:21]
+WARNING: [Synth 8-3848] Net left in module/entity keyboard does not have driver. [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/keyboard.v:24]
+WARNING: [Synth 8-3848] Net right in module/entity keyboard does not have driver. [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/keyboard.v:24]
+WARNING: [Synth 8-3848] Net enter in module/entity keyboard does not have driver. [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/keyboard.v:24]
+WARNING: [Synth 8-3848] Net rst in module/entity keyboard does not have driver. [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/keyboard.v:37]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (2#1) [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/keyboard.v:21]
+INFO: [Synth 8-638] synthesizing module 'dcm_clk' [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/synth_1/.Xil/Vivado-9948-AlexD-Desktop/realtime/dcm_clk_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'dcm_clk' (3#1) [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/synth_1/.Xil/Vivado-9948-AlexD-Desktop/realtime/dcm_clk_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'vga_draw' [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/vga_draw.v:22]
+	Parameter BLACK bound to: 12'b000000000000 
+	Parameter BLUE bound to: 12'b000000001111 
+	Parameter GREEN bound to: 12'b000011110000 
+	Parameter DIAN bound to: 12'b000011111111 
+	Parameter RED bound to: 12'b111100000000 
+	Parameter PURPLE bound to: 12'b111100001111 
+	Parameter YELLOW bound to: 12'b111111110000 
+	Parameter WHITE bound to: 12'b111111111111 
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/vga_sync.v:23]
+	Parameter h_frontporch bound to: 96 - type: integer 
+	Parameter h_active bound to: 144 - type: integer 
+	Parameter h_backporch bound to: 784 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_frontporch bound to: 2 - type: integer 
+	Parameter v_active bound to: 35 - type: integer 
+	Parameter v_backporch bound to: 515 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (4#1) [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/vga_sync.v:23]
+INFO: [Synth 8-256] done synthesizing module 'vga_draw' (5#1) [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/vga_draw.v:22]
+INFO: [Synth 8-638] synthesizing module 'sound' [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:25]
+	Parameter zero bound to: 8'b00000000 
+	Parameter d21 bound to: 8'b00010000 
+	Parameter d22 bound to: 8'b00010010 
+	Parameter d23 bound to: 8'b00010100 
+	Parameter d24 bound to: 8'b00010101 
+	Parameter d25 bound to: 8'b00010111 
+	Parameter d26 bound to: 8'b00011001 
+	Parameter d27 bound to: 8'b00011011 
+	Parameter d11 bound to: 8'b00011100 
+	Parameter d12 bound to: 8'b00011110 
+	Parameter d13 bound to: 8'b00100000 
+	Parameter d14 bound to: 8'b00100001 
+	Parameter d15 bound to: 8'b00100011 
+	Parameter d16 bound to: 8'b00100101 
+	Parameter d17 bound to: 8'b00100111 
+	Parameter m01 bound to: 8'b00101000 
+	Parameter m02 bound to: 8'b00101010 
+	Parameter m03 bound to: 8'b00101100 
+	Parameter m04 bound to: 8'b00101101 
+	Parameter m05 bound to: 8'b00101111 
+	Parameter m06 bound to: 8'b00110001 
+	Parameter m07 bound to: 8'b00110011 
+	Parameter h11 bound to: 8'b00110100 
+	Parameter h12 bound to: 8'b00110110 
+	Parameter h13 bound to: 8'b00111000 
+	Parameter h14 bound to: 8'b00111001 
+	Parameter h15 bound to: 8'b00111011 
+	Parameter h16 bound to: 8'b00111101 
+	Parameter h17 bound to: 8'b00111111 
+	Parameter h21 bound to: 8'b01000000 
+	Parameter h22 bound to: 8'b01000010 
+	Parameter h23 bound to: 8'b01000100 
+	Parameter h24 bound to: 8'b01000101 
+	Parameter h25 bound to: 8'b01000111 
+	Parameter h26 bound to: 8'b01001001 
+	Parameter h27 bound to: 8'b01001011 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110100 is unreachable [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:430]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110101 is unreachable [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:430]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110110 is unreachable [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:430]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110111 is unreachable [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:430]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110100 is unreachable [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:430]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110101 is unreachable [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:430]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110110 is unreachable [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:430]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110111 is unreachable [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:430]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000011011101 is unreachable [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:430]
+WARNING: [Synth 8-6014] Unused sequential element num_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:397]
+INFO: [Synth 8-256] done synthesizing module 'sound' (6#1) [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:25]
+INFO: [Synth 8-638] synthesizing module 'play' [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/play.v:23]
+	Parameter zero bound to: 8'b00000000 
+	Parameter d21 bound to: 8'b00010000 
+	Parameter d22 bound to: 8'b00010010 
+	Parameter d23 bound to: 8'b00010100 
+	Parameter d24 bound to: 8'b00010101 
+	Parameter d25 bound to: 8'b00010111 
+	Parameter d26 bound to: 8'b00011001 
+	Parameter d27 bound to: 8'b00011011 
+	Parameter d11 bound to: 8'b00011100 
+	Parameter d12 bound to: 8'b00011110 
+	Parameter d13 bound to: 8'b00100000 
+	Parameter d14 bound to: 8'b00100001 
+	Parameter d15 bound to: 8'b00100011 
+	Parameter d16 bound to: 8'b00100101 
+	Parameter d17 bound to: 8'b00100111 
+	Parameter d51 bound to: 8'b00011101 
+	Parameter d52 bound to: 8'b00011111 
+	Parameter d53 bound to: 8'b00100010 
+	Parameter d54 bound to: 8'b00100100 
+	Parameter d55 bound to: 8'b00100110 
+	Parameter m01 bound to: 8'b00101000 
+	Parameter m02 bound to: 8'b00101010 
+	Parameter m03 bound to: 8'b00101100 
+	Parameter m04 bound to: 8'b00101101 
+	Parameter m05 bound to: 8'b00101111 
+	Parameter m06 bound to: 8'b00110001 
+	Parameter m07 bound to: 8'b00110011 
+	Parameter m51 bound to: 8'b00101001 
+	Parameter m52 bound to: 8'b00101011 
+	Parameter m53 bound to: 8'b00101110 
+	Parameter m54 bound to: 8'b00110000 
+	Parameter m55 bound to: 8'b00110010 
+	Parameter h11 bound to: 8'b00110100 
+	Parameter h12 bound to: 8'b00110110 
+	Parameter h13 bound to: 8'b00111000 
+	Parameter h14 bound to: 8'b00111001 
+	Parameter h15 bound to: 8'b00111011 
+	Parameter h16 bound to: 8'b00111101 
+	Parameter h17 bound to: 8'b00111111 
+	Parameter h51 bound to: 8'b00110101 
+	Parameter h52 bound to: 8'b00110111 
+	Parameter h53 bound to: 8'b00111010 
+	Parameter h54 bound to: 8'b00111100 
+	Parameter h55 bound to: 8'b00111110 
+	Parameter h21 bound to: 8'b01000000 
+	Parameter h22 bound to: 8'b01000010 
+	Parameter h23 bound to: 8'b01000100 
+	Parameter h24 bound to: 8'b01000101 
+	Parameter h25 bound to: 8'b01000111 
+	Parameter h26 bound to: 8'b01001001 
+	Parameter h27 bound to: 8'b01001011 
+WARNING: [Synth 8-6014] Unused sequential element clk_2hz_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/play.v:106]
+WARNING: [Synth 8-6014] Unused sequential element couter4_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/play.v:105]
+WARNING: [Synth 8-6014] Unused sequential element clk_8hz_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/play.v:609]
+WARNING: [Synth 8-6014] Unused sequential element couter2_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/play.v:608]
+INFO: [Synth 8-256] done synthesizing module 'play' (7#1) [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/play.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top_piano' (8#1) [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/top_piano.v:21]
+WARNING: [Synth 8-3917] design top_piano has port SUDIO_SD driven by constant 0
+WARNING: [Synth 8-3331] design keyboard has unconnected port left
+WARNING: [Synth 8-3331] design keyboard has unconnected port right
+WARNING: [Synth 8-3331] design keyboard has unconnected port enter
+WARNING: [Synth 8-3331] design keyboard has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 461.434 ; gain = 155.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin ps2:reset to constant 0 [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/keyboard.v:37]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 461.434 ; gain = 155.340
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/synth_1/.Xil/Vivado-9948-AlexD-Desktop/dcp1/dcm_clk_in_context.xdc] for cell 'u_clk'
+Finished Parsing XDC File [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/synth_1/.Xil/Vivado-9948-AlexD-Desktop/dcp1/dcm_clk_in_context.xdc] for cell 'u_clk'
+Parsing XDC File [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/constrs_1/new/piano_EGo1.xdc]
+Finished Parsing XDC File [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/constrs_1/new/piano_EGo1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/constrs_1/new/piano_EGo1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_piano_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_piano_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 809.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 809.094 ; gain = 503.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 809.094 ; gain = 503.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/synth_1/.Xil/Vivado-9948-AlexD-Desktop/dcp1/dcm_clk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/synth_1/.Xil/Vivado-9948-AlexD-Desktop/dcp1/dcm_clk_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for u_clk. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 809.094 ; gain = 503.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "key_relese" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_cnt" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element y_cnt_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/vga_sync.v:64]
+INFO: [Synth 8-5546] ROM "rgb_reg0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rgb_reg0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sound_change" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "yinfu" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element couter7_reg_rep was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:409]
+WARNING: [Synth 8-6014] Unused sequential element couter3_reg_rep was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:407]
+WARNING: [Synth 8-6014] Unused sequential element couter3_reg_rep was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:407]
+WARNING: [Synth 8-6014] Unused sequential element couter2_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:380]
+INFO: [Synth 8-5546] ROM "piano_change" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "piano_change" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element yinfu_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/play.v:128]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 809.094 ; gain = 503.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---ROMs : 
+	                              ROMs := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 86    
+	  37 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	  18 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 29    
+	   2 Input     13 Bit        Muxes := 36    
+	   6 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 5     
+	   6 Input      8 Bit        Muxes := 3     
+	 158 Input      8 Bit        Muxes := 1     
+	  70 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 15    
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	  37 Input      1 Bit        Muxes := 1     
+	 158 Input      1 Bit        Muxes := 1     
+	  52 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_piano 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
+Module ps2_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module keyboard 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module vga_draw 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	  18 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 29    
+	   2 Input     13 Bit        Muxes := 36    
+	   6 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 15    
+Module sound 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---ROMs : 
+	                              ROMs := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 35    
+	  37 Input     32 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	 158 Input      8 Bit        Muxes := 1     
+	  70 Input      7 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	  37 Input      1 Bit        Muxes := 1     
+	 158 Input      1 Bit        Muxes := 1     
+Module play 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 51    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  52 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "sound_change" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element couter3_reg_rep was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:407]
+WARNING: [Synth 8-6014] Unused sequential element couter7_reg_rep was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:409]
+WARNING: [Synth 8-6014] Unused sequential element couter3_reg_rep was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:407]
+WARNING: [Synth 8-6014] Unused sequential element couter2_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/sound.v:380]
+INFO: [Synth 8-5546] ROM "piano_change" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "piano_change" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element yinfu_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/play.v:128]
+INFO: [Synth 8-5546] ROM "u0/key_relese" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vga1/vga_syn_inst/y_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vga1/rgb_reg0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element vga1/vga_syn_inst/y_cnt_reg was removed.  [D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.srcs/sources_1/imports/new/vga_sync.v:64]
+WARNING: [Synth 8-3917] design top_piano has port SUDIO_SD driven by constant 0
+INFO: [Synth 8-3886] merging instance 'vga1/rgb_reg_reg[0]' (FDRE) to 'vga1/rgb_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga1/rgb_reg_reg[1]' (FDRE) to 'vga1/rgb_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga1/rgb_reg_reg[2]' (FDRE) to 'vga1/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga1/rgb_reg_reg[4]' (FDRE) to 'vga1/rgb_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vga1/rgb_reg_reg[5]' (FDRE) to 'vga1/rgb_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga1/rgb_reg_reg[6]' (FDRE) to 'vga1/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga1/rgb_reg_reg[8]' (FDRE) to 'vga1/rgb_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga1/rgb_reg_reg[9]' (FDRE) to 'vga1/rgb_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vga1/rgb_reg_reg[10]' (FDRE) to 'vga1/rgb_reg_reg[11]'
+WARNING: [Synth 8-3332] Sequential element (u0/ps2/b_reg_reg[0]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[23]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[22]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[21]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[20]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[19]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[18]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[17]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[16]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[15]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[14]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[13]) is unused and will be removed from module top_piano.
+WARNING: [Synth 8-3332] Sequential element (vga1/rgb_reg_reg[12]) is unused and will be removed from module top_piano.
+INFO: [Synth 8-3886] merging instance 'nolabel_line81/couter5_reg[6]' (FDE) to 'nolabel_line81/couter5_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line81/couter5_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (nolabel_line81/couter5_reg[7]) is unused and will be removed from module top_piano.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 809.094 ; gain = 503.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-----------------+---------------+----------------+
+|Module Name | RTL Object      | Depth x Width | Implemented As | 
++------------+-----------------+---------------+----------------+
+|sound       | couter3_reg_rep | 256x6         | Block RAM      | 
+|sound       | couter7_reg_rep | 256x7         | Block RAM      | 
+|sound       | couter3_reg_rep | 256x6         | Block RAM      | 
+|play        | yinfu_reg       | 256x8         | Block RAM      | 
+|sound       | couter3_reg_rep | 256x6         | Block RAM      | 
+|sound       | couter7_reg_rep | 256x7         | Block RAM      | 
+|sound       | couter3_reg_rep | 256x6         | Block RAM      | 
+|play        | yinfu_reg       | 256x8         | Block RAM      | 
++------------+-----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk/clk_out1' to pin 'u_clk/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 853.180 ; gain = 547.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 896.672 ; gain = 590.578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance nolabel_line81/couter3_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance nolabel_line81/couter7_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance nolabel_line81/couter3_reg_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance nolabel_line87/yinfu_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 931.207 ; gain = 625.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 931.207 ; gain = 625.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 931.207 ; gain = 625.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 931.207 ; gain = 625.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 931.207 ; gain = 625.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 931.207 ; gain = 625.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 931.207 ; gain = 625.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dcm_clk       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |dcm_clk    |     1|
+|2     |BUFG       |     1|
+|3     |CARRY4     |    26|
+|4     |LUT1       |     7|
+|5     |LUT2       |   177|
+|6     |LUT3       |    98|
+|7     |LUT4       |   116|
+|8     |LUT5       |   142|
+|9     |LUT6       |   738|
+|10    |MUXF7      |     5|
+|11    |MUXF8      |     1|
+|12    |RAMB18E1   |     1|
+|13    |RAMB18E1_1 |     1|
+|14    |RAMB18E1_2 |     1|
+|15    |RAMB18E1_3 |     1|
+|16    |FDRE       |   193|
+|17    |FDSE       |     2|
+|18    |IBUF       |     3|
+|19    |OBUF       |    17|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------+---------+------+
+|      |Instance         |Module   |Cells |
++------+-----------------+---------+------+
+|1     |top              |         |  1531|
+|2     |  nolabel_line81 |sound    |   713|
+|3     |  nolabel_line87 |play     |   342|
+|4     |  u0             |keyboard |    85|
+|5     |    ps2          |ps2_rx   |    41|
+|6     |  vga1           |vga_draw |   369|
+|7     |    vga_syn_inst |vga_sync |   312|
++------+-----------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 931.207 ; gain = 625.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 931.207 ; gain = 277.453
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 931.207 ; gain = 625.113
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 931.207 ; gain = 636.598
+INFO: [Common 17-1381] The checkpoint 'D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/synth_1/top_piano.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_piano_utilization_synth.rpt -pb top_piano_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 931.207 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 24 16:18:48 2020...

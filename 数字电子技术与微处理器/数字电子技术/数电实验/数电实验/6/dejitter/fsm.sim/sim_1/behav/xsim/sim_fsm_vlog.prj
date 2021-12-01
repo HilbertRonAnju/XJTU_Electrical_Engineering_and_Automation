@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../fsm.srcs/sources_1/new/differenciator.v" \
+"../../../../fsm.srcs/sources_1/new/fsm.v" \
+"../../../../fsm.srcs/sources_1/new/sec.v" \
+"../../../../fsm.srcs/sources_1/new/top.v" \
+"../../../../fsm.srcs/sources_1/new/sim_fsm.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

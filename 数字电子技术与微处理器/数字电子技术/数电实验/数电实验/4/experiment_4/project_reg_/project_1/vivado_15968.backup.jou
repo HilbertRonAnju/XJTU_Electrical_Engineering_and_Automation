@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  1 02:55:44 2020
+# Process ID: 15968
+# Current directory: E:/vivado_project/project_reg_/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19960 E:\vivado_project\project_reg_\project_1\project_1.xpr
+# Log file: E:/vivado_project/project_reg_/project_1/vivado.log
+# Journal file: E:/vivado_project/project_reg_/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado_project/project_reg_/project_1/project_1.xpr
+add_files -norecurse E:/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse E:/vivado_project/project_reg_/project_1/project_1srcs/sim_1/new/sim_trans38.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source sim_trans38.tcl
+current_wave_config {Untitled 1}
+add_wave {{/sim_trans38/uut/q}} 
+current_wave_config {Untitled 1}
+add_wave {{/sim_trans38/uut/qbar}} 
+save_wave_config {E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg}
+add_files -fileset sim_1 -norecurse E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+set_property xsim.view E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source sim_trans38.tcl
+close_sim
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source sim_trans38.tcl
+file mkdir E:/vivado_project/project_reg_/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/vivado_project/project_reg_/project_1/project_1.srcs/sim_1/new/simd.v w ]
+add_files -fileset sim_1 E:/vivado_project/project_reg_/project_1/project_1.srcs/sim_1/new/simd.v
+update_compile_order -fileset sim_1
+add_files -norecurse E:/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/d.v
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source sim_trans38.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top simd [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source simd.tcl
+close_sim
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source simd.tcl
+current_wave_config {sim_trans38_behav.wcfg}
+add_wave {{/simd/d}} 
+current_wave_config {sim_trans38_behav.wcfg}
+add_wave {{/simd/clk}} 
+current_wave_config {sim_trans38_behav.wcfg}
+add_wave {{/simd/rd}} 
+save_wave_config {E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source simd.tcl
+current_wave_config {sim_trans38_behav.wcfg}
+add_wave {{/simd/uut/q}} 
+current_wave_config {sim_trans38_behav.wcfg}
+add_wave {{/simd/uut/qbar}} 
+save_wave_config {E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source simd.tcl
+synth_design -rtl -name rtl_1
+close_sim
+close_sim

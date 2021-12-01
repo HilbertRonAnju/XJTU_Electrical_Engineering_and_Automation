@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec  2 15:55:36 2020
+# Process ID: 10496
+# Current directory: C:/Users/96547/Desktop/ADC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2620 C:\Users\96547\Desktop\ADC\XADC001.xpr
+# Log file: C:/Users/96547/Desktop/ADC/vivado.log
+# Journal file: C:/Users/96547/Desktop/ADC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/96547/Desktop/ADC/XADC001.xpr
+update_compile_order -fileset sources_1

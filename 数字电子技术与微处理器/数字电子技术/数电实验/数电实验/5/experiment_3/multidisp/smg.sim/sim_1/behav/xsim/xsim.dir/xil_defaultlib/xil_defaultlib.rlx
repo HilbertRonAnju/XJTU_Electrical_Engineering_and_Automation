@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+G:/vivado_project/day3/multidisp/smg.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+G:/vivado_project/day3/multidisp/smg.srcs/sim_1/new/sim_smg.v,1604941402,verilog,,,,sim_smg,,,,,,,,
+G:/vivado_project/day3/multidisp/smg.srcs/sources_1/new/muldisp.v,1604940606,verilog,,G:/vivado_project/day3/multidisp/smg.srcs/sources_1/new/sec.v,,muldisp,,,,,,,,
+G:/vivado_project/day3/multidisp/smg.srcs/sources_1/new/sec.v,1604938146,verilog,,G:/vivado_project/day3/multidisp/smg.srcs/sources_1/new/smg.v,,sec,,,,,,,,
+G:/vivado_project/day3/multidisp/smg.srcs/sources_1/new/smg.v,1604940634,verilog,,G:/vivado_project/day3/multidisp/smg.srcs/sim_1/new/sim_smg.v,,smg,,,,,,,,

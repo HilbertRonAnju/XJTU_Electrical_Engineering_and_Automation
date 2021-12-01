@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  1 13:34:21 2020
+# Process ID: 13172
+# Current directory: E:/vivado_project/project_reg_/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16272 E:\vivado_project\project_reg_\project_1\project_1.xpr
+# Log file: E:/vivado_project/project_reg_/project_1/vivado.log
+# Journal file: E:/vivado_project/project_reg_/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado_project/project_reg_/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse E:/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v
+launch_simulation
+synth_design -rtl -name rtl_1
+launch_simulation
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source sim_shiftreg.tcl
+close_sim
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source sim_shiftreg.tcl
+close_sim
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source sim_shiftreg.tcl
+current_wave_config {sim_trans38_behav.wcfg}
+add_wave {{/sim_shiftreg/uut/out}} 
+save_wave_config {E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/vivado_project/project_reg_/project_1/sim_trans38_behav.wcfg
+source sim_shiftreg.tcl

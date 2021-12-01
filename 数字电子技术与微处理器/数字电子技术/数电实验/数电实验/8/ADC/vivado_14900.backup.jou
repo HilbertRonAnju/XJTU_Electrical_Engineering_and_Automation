@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Nov 28 09:35:36 2020
+# Process ID: 14900
+# Current directory: D:/Users/whxxjj/Documents/Vivado/XADC001
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14172 D:\Users\whxxjj\Documents\Vivado\XADC001\XADC001.xpr
+# Log file: D:/Users/whxxjj/Documents/Vivado/XADC001/vivado.log
+# Journal file: D:/Users/whxxjj/Documents/Vivado/XADC001\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.xpr
+update_compile_order -fileset sources_1
+create_ip -name xadc_wiz -vendor xilinx.com -library ip -version 3.3 -module_name xadc_wiz_0 -dir d:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/ip
+set_property -dict [list CONFIG.OT_ALARM {false} CONFIG.USER_TEMP_ALARM {false} CONFIG.VCCINT_ALARM {false} CONFIG.VCCAUX_ALARM {false} CONFIG.SINGLE_CHANNEL_SELECTION {VAUXP1_VAUXN1}] [get_ips xadc_wiz_0]
+generate_target {instantiation_template} [get_files d:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all xadc_wiz_0] }
+export_ip_user_files -of_objects [get_files d:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci]
+launch_runs -jobs 16 xadc_wiz_0_synth_1
+export_simulation -of_objects [get_files d:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci] -directory D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.ip_user_files/sim_scripts -ip_user_files_dir D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.ip_user_files -ipstatic_source_dir D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.cache/compile_simlib/modelsim} {questa=D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.cache/compile_simlib/questa} {riviera=D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.cache/compile_simlib/riviera} {activehdl=D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse {D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/new/clkdiv.v D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/new/outreg.v D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/new/bcd_7.v D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/new/select.v}
+update_compile_order -fileset sources_1
+close [ open D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/new/XADC_channel_1.v w ]
+add_files D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/new/XADC_channel_1.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/new/BCD_16.v w ]
+add_files D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/new/BCD_16.v
+update_compile_order -fileset sources_1
+close [ open D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/new/wdnmd.v w ]
+add_files D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/sources_1/new/wdnmd.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+refresh_design
+place_ports {en[3]} H1
+place_ports {en[2]} C1
+place_ports {en[1]} C2
+place_ports {en[0]} G2
+place_ports {y[6]} D4
+place_ports {y[5]} E3
+place_ports {y[4]} D3
+place_ports {y[3]} F4
+place_ports {y[2]} F3
+place_ports {y[1]} E2
+place_ports {y[0]} D2
+place_ports {en[3]} G6
+place_ports {en[2]} E1
+place_ports {en[1]} F1
+place_ports {en[0]} G1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {en[3]} {en[2]} {en[1]} {en[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {y[6]} {y[5]} {y[4]} {y[3]} {y[2]} {y[1]} {y[0]}]]
+place_ports clk P17
+place_ports rst R15
+place_ports vauxn1 B12
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list vauxn1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list vauxp1]]
+file mkdir D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/constrs_1/new
+close [ open D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/constrs_1/new/wgnmd.xdc w ]
+add_files -fileset constrs_1 D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/constrs_1/new/wgnmd.xdc
+set_property target_constrs_file D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.srcs/constrs_1/new/wgnmd.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.runs/impl_1/wdnmd.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.runs/impl_1/wdnmd.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.runs/impl_1/wdnmd.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.runs/impl_1/wdnmd.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

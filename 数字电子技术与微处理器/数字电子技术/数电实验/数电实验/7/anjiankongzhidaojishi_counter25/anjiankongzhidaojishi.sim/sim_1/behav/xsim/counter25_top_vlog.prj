@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../anjiankongzhidaojishi.srcs/sources_1/new/Sec_pule_generator.v" \
+"../../../../anjiankongzhidaojishi.srcs/sources_1/new/counter25.v" \
+"../../../../anjiankongzhidaojishi.srcs/sources_1/new/state.v" \
+"../../../../anjiankongzhidaojishi.srcs/sources_1/new/counter25_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

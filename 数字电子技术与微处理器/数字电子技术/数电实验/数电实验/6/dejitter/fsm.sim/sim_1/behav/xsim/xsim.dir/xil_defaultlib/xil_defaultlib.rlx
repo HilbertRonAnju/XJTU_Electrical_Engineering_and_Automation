@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+G:/vivado_project/day4/dejitter/fsm.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+G:/vivado_project/day4/dejitter/fsm.srcs/sources_1/new/differenciator.v,1605536822,verilog,,G:/vivado_project/day4/dejitter/fsm.srcs/sources_1/new/fsm.v,,differenciator,,,,,,,,
+G:/vivado_project/day4/dejitter/fsm.srcs/sources_1/new/fsm.v,1605536519,verilog,,G:/vivado_project/day4/dejitter/fsm.srcs/sources_1/new/sec.v,,fsm,,,,,,,,
+G:/vivado_project/day4/dejitter/fsm.srcs/sources_1/new/sec.v,1605535272,verilog,,G:/vivado_project/day4/dejitter/fsm.srcs/sources_1/new/top.v,,sec,,,,,,,,
+G:/vivado_project/day4/dejitter/fsm.srcs/sources_1/new/sim_fsm.v,1605535688,verilog,,,,sim_fsm,,,,,,,,
+G:/vivado_project/day4/dejitter/fsm.srcs/sources_1/new/top.v,1605535282,verilog,,G:/vivado_project/day4/dejitter/fsm.srcs/sources_1/new/sim_fsm.v,,top,,,,,,,,

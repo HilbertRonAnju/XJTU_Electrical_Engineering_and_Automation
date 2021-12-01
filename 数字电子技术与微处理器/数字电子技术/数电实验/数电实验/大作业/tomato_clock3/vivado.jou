@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 30 23:56:27 2020
+# Process ID: 10760
+# Current directory: F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5696 F:\桌面\西安交通大学\数字电子技术与微处理器\数字电子技术\数电实验\数电实验\大作业\chronopro\smg.xpr
+# Log file: F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/vivado.log
+# Journal file: F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.xpr
+update_compile_order -fileset sources_1

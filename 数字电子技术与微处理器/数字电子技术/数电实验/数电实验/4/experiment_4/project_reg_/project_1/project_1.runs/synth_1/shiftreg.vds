@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  1 20:44:02 2020
+# Process ID: 6268
+# Current directory: C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log shiftreg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source shiftreg.tcl
+# Log file: C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1.runs/synth_1/shiftreg.vds
+# Journal file: C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source shiftreg.tcl -notrace
+Command: synth_design -top shiftreg -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15760 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 362.297 ; gain = 100.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'shiftreg' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1.srcs/sources_1/new/shiftreg.v:23]
+	Parameter dig bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dbar' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'dbar' (1#1) [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:25]
+WARNING: [Synth 8-350] instance 'regs' of module 'dbar' requires 6 connections, but only 5 given [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1.srcs/sources_1/new/shiftreg.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'shiftreg' (2#1) [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1.srcs/sources_1/new/shiftreg.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 417.641 ; gain = 156.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.641 ; gain = 156.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.641 ; gain = 156.262
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.641 ; gain = 156.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 520.852 ; gain = 259.473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 520.852 ; gain = 259.473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 529.523 ; gain = 268.145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 529.523 ; gain = 268.145
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[7] with 1st driver pin 'regs[7]/q_reg__0/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[7] with 2nd driver pin 'regs[7]/q_reg/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[6] with 1st driver pin 'regs[6]/q_reg__0/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[6] with 2nd driver pin 'regs[6]/q_reg/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[5] with 1st driver pin 'regs[5]/q_reg__0/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[5] with 2nd driver pin 'regs[5]/q_reg/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[4] with 1st driver pin 'regs[4]/q_reg__0/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[4] with 2nd driver pin 'regs[4]/q_reg/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[3] with 1st driver pin 'regs[3]/q_reg__0/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[3] with 2nd driver pin 'regs[3]/q_reg/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[2] with 1st driver pin 'regs[2]/q_reg__0/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[2] with 2nd driver pin 'regs[2]/q_reg/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[1] with 1st driver pin 'regs[1]/q_reg__0/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[1] with 2nd driver pin 'regs[1]/q_reg/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[0] with 1st driver pin 'regs[0]/q_reg__0/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out_OBUF[0] with 2nd driver pin 'regs[0]/q_reg/Q' [C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1srcs/sources_1/new/dbar.v:40]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        8|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 529.523 ; gain = 268.145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 529.523 ; gain = 268.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 529.523 ; gain = 268.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 529.523 ; gain = 268.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 529.523 ; gain = 268.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     2|
+|2     |FDRE |    16|
+|3     |IBUF |     4|
+|4     |OBUF |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+------------+-------+------+
+|      |Instance    |Module |Cells |
++------+------------+-------+------+
+|1     |top         |       |    30|
+|2     |  \regs[0]  |dbar   |     2|
+|3     |  \regs[1]  |dbar_0 |     2|
+|4     |  \regs[2]  |dbar_1 |     2|
+|5     |  \regs[3]  |dbar_2 |     2|
+|6     |  \regs[4]  |dbar_3 |     2|
+|7     |  \regs[5]  |dbar_4 |     2|
+|8     |  \regs[6]  |dbar_5 |     2|
+|9     |  \regs[7]  |dbar_6 |     2|
++------+------------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 529.523 ; gain = 268.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 16 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 529.523 ; gain = 268.145
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 529.523 ; gain = 268.145
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 635.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 1 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 635.965 ; gain = 382.961
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 635.965 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1.runs/synth_1/shiftreg.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file shiftreg_utilization_synth.rpt -pb shiftreg_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 20:44:14 2020...

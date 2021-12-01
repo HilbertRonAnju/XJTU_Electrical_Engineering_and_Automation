@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  1 20:35:01 2020
+# Process ID: 13804
+# Current directory: C:/Users/96547/Desktop/vivado_project/project_counter/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter.tcl
+# Log file: C:/Users/96547/Desktop/vivado_project/project_counter/project_1/project_1.runs/synth_1/counter.vds
+# Journal file: C:/Users/96547/Desktop/vivado_project/project_counter/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source counter.tcl -notrace

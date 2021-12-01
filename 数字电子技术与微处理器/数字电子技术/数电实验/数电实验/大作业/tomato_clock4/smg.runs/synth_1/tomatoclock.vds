@@ -1,0 +1,418 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 16 21:31:17 2020
+# Process ID: 15608
+# Current directory: G:/vivado_project/day3/tomatoes/smg.runs/synth_1
+# Command line: vivado.exe -log tomatoclock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tomatoclock.tcl
+# Log file: G:/vivado_project/day3/tomatoes/smg.runs/synth_1/tomatoclock.vds
+# Journal file: G:/vivado_project/day3/tomatoes/smg.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tomatoclock.tcl -notrace
+Command: synth_design -top tomatoclock -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2528 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 362.488 ; gain = 101.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tomatoclock' [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/tomatoclock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'timeadjust' [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/timeadjust.v:23]
+	Parameter LEN bound to: 4'b0011 
+	Parameter at256 bound to: 14'b00000010000000 
+	Parameter b bound to: 14'b00000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'timeadjust' (1#1) [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/timeadjust.v:23]
+INFO: [Synth 8-6157] synthesizing module 'timeadjust__parameterized0' [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/timeadjust.v:23]
+	Parameter LEN bound to: 4'b0011 
+	Parameter at256 bound to: 14'b00001010000000 
+	Parameter b bound to: 14'b00000000001110 
+INFO: [Synth 8-6155] done synthesizing module 'timeadjust__parameterized0' (1#1) [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/timeadjust.v:23]
+INFO: [Synth 8-6157] synthesizing module 'm60_counter' [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/m60_counter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sec' [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/sec.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter MAX bound to: 100000000 - type: integer 
+WARNING: [Synth 8-5788] Register sec_reg in module sec is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/sec.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'sec' (2#1) [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/sec.v:23]
+INFO: [Synth 8-6157] synthesizing module 'muldisp' [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/muldisp.v:22]
+	Parameter LEN bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'smg' [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/smg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'smg' (3#1) [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/smg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sec__parameterized0' [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/sec.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter MAX bound to: 100000 - type: integer 
+WARNING: [Synth 8-5788] Register sec_reg in module sec__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/sec.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'sec__parameterized0' (3#1) [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/sec.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'muldisp' (4#1) [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/muldisp.v:22]
+WARNING: [Synth 8-6014] Unused sequential element minoverflow_reg was removed.  [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/m60_counter.v:87]
+WARNING: [Synth 8-5788] Register secoverflow_reg in module m60_counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/m60_counter.v:56]
+WARNING: [Synth 8-5788] Register minnum_reg in module m60_counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/m60_counter.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'm60_counter' (5#1) [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/m60_counter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'tomatoclock' (6#1) [G:/vivado_project/day3/tomatoes/smg.srcs/sources_1/new/tomatoclock.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 417.988 ; gain = 157.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 417.988 ; gain = 157.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 417.988 ; gain = 157.051
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'debug[7]'. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'debug[6]'. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'debug[5]'. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'debug[4]'. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'debug[3]'. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'debug[2]'. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'debug[1]'. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'debug[0]'. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/vivado_project/day3/tomatoes/smg.srcs/constrs_1/new/con_smg1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tomatoclock_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tomatoclock_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 743.488 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 743.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 743.488 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 743.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 743.488 ; gain = 482.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 743.488 ; gain = 482.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 743.488 ; gain = 482.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "nummap" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "secnum" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dot" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "minnum" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 743.488 ; gain = 482.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 10    
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 8     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	  12 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 10    
+	   3 Input      8 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module timeadjust__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module sec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module smg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      8 Bit        Muxes := 1     
+Module sec__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module muldisp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
+Module m60_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "work/secgen/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "work/secgen/sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "work/shownum/clock/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "work/shownum/clock/sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "idle/secgen/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "idle/secgen/sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "idle/shownum/clock/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "idle/shownum/clock/sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design tomatoclock has unconnected port switches[3]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 743.488 ; gain = 482.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 743.488 ; gain = 482.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 743.488 ; gain = 482.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (work/minnum_reg[6]_P) is unused and will be removed from module tomatoclock.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 768.680 ; gain = 507.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 768.680 ; gain = 507.742
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 768.680 ; gain = 507.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 768.680 ; gain = 507.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 768.680 ; gain = 507.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 768.680 ; gain = 507.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 768.680 ; gain = 507.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    32|
+|3     |LUT1   |     3|
+|4     |LUT2   |    16|
+|5     |LUT3   |    27|
+|6     |LUT4   |    67|
+|7     |LUT5   |    34|
+|8     |LUT6   |    35|
+|9     |FDCE   |    32|
+|10    |FDPE   |    16|
+|11    |FDRE   |   160|
+|12    |LDC    |     8|
+|13    |IBUF   |     7|
+|14    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+----------------------+------+
+|      |Instance    |Module                |Cells |
++------+------------+----------------------+------+
+|1     |top         |                      |   462|
+|2     |  idle      |m60_counter           |   202|
+|3     |    secgen  |sec_1                 |    52|
+|4     |    shownum |muldisp_2             |    88|
+|5     |      clock |sec__parameterized0_3 |    52|
+|6     |  work      |m60_counter_0         |   227|
+|7     |    secgen  |sec                   |    52|
+|8     |    shownum |muldisp               |    92|
+|9     |      clock |sec__parameterized0   |    52|
++------+------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 768.680 ; gain = 507.742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 768.680 ; gain = 182.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 768.680 ; gain = 507.742
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 768.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LDC => LDCE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 15 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 768.680 ; gain = 516.262
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 768.680 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/vivado_project/day3/tomatoes/smg.runs/synth_1/tomatoclock.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tomatoclock_utilization_synth.rpt -pb tomatoclock_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 21:31:52 2020...

@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.srcs/sources_1/new/Sec_pule_generator.v,1605502309,verilog,,C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.srcs/sources_1/new/counter25.v,,Sec_pule_generator,,,,,,,,
+C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.srcs/sources_1/new/counter25.v,1605516224,verilog,,C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.srcs/sources_1/new/state.v,,counter25,,,,,,,,
+C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.srcs/sources_1/new/counter25_top.v,1605510279,verilog,,,,counter25_top,,,,,,,,
+C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.srcs/sources_1/new/state.v,1605510462,verilog,,C:/Users/96547/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.srcs/sources_1/new/counter25_top.v,,State,,,,,,,,

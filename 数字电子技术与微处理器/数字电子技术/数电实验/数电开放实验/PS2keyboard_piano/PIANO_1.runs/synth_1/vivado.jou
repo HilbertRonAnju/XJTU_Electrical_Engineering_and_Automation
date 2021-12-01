@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 26 18:43:30 2020
+# Process ID: 8444
+# Current directory: F:/FPGA_Project/altrea/PS2keyboard_piano/PIANO_1.runs/synth_1
+# Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: F:/FPGA_Project/altrea/PS2keyboard_piano/PIANO_1.runs/synth_1/TOP.vds
+# Journal file: F:/FPGA_Project/altrea/PS2keyboard_piano/PIANO_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace

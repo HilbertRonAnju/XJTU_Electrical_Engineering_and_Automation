@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov  9 20:13:58 2020
+# Process ID: 2484
+# Current directory: G:/vivado_project/day3/smg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12420 G:\vivado_project\day3\smg\smg.xpr
+# Log file: G:/vivado_project/day3/smg/vivado.log
+# Journal file: G:/vivado_project/day3/smg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/vivado_project/day3/smg/smg.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source sim_smg.tcl
+update_compile_order -fileset sources_1
+current_wave_config {Untitled 1}
+add_wave {{/sim_smg/uut/dispout/display}} 
+current_wave_config {Untitled 1}
+add_wave {{/sim_smg/uut/disp}} 
+current_wave_config {Untitled 1}
+add_wave {{/sim_smg/uut/en}} 
+save_wave_config {G:/vivado_project/day3/smg/sim_smg_behav.wcfg}
+add_files -fileset sim_1 -norecurse G:/vivado_project/day3/smg/sim_smg_behav.wcfg
+set_property xsim.view G:/vivado_project/day3/smg/sim_smg_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config G:/vivado_project/day3/smg/sim_smg_behav.wcfg
+source sim_smg.tcl
+close_sim
+launch_simulation
+open_wave_config G:/vivado_project/day3/smg/sim_smg_behav.wcfg
+source sim_smg.tcl
+current_wave_config {sim_smg_behav.wcfg}
+add_wave {{/sim_smg/uut/clk}} 
+save_wave_config {G:/vivado_project/day3/smg/sim_smg_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config G:/vivado_project/day3/smg/sim_smg_behav.wcfg
+source sim_smg.tcl
+current_wave_config {sim_smg_behav.wcfg}
+add_wave {{/sim_smg/uut/count}} 
+save_wave_config {G:/vivado_project/day3/smg/sim_smg_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config G:/vivado_project/day3/smg/sim_smg_behav.wcfg
+source sim_smg.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config G:/vivado_project/day3/smg/sim_smg_behav.wcfg
+source sim_smg.tcl
+close_sim

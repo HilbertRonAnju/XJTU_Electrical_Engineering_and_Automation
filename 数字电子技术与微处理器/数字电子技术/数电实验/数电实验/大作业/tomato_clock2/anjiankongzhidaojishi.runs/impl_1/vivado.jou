@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Nov 25 06:21:19 2020
+# Process ID: 2868
+# Current directory: C:/Users/10021/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.runs/impl_1
+# Command line: vivado.exe -log counter25_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source counter25_top.tcl -notrace
+# Log file: C:/Users/10021/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.runs/impl_1/counter25_top.vdi
+# Journal file: C:/Users/10021/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source counter25_top.tcl -notrace

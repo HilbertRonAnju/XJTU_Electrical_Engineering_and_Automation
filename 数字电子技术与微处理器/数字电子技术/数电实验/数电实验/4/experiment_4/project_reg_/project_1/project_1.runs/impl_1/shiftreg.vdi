@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  1 20:44:58 2020
+# Process ID: 8548
+# Current directory: C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log shiftreg.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source shiftreg.tcl -notrace
+# Log file: C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1.runs/impl_1/shiftreg.vdi
+# Journal file: C:/Users/96547/Desktop/vivado_project/project_reg_/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source shiftreg.tcl -notrace
+Command: link_design -top shiftreg -part xc7a35tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 554.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+4 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 559.738 ; gain = 305.879
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net regs[0]/q[0] has multiple drivers: regs[0]/q_reg/Q, and regs[0]/q_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net regs[1]/q[0] has multiple drivers: regs[1]/q_reg__0/Q, and regs[1]/q_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net regs[2]/q[0] has multiple drivers: regs[2]/q_reg/Q, and regs[2]/q_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net regs[3]/q[0] has multiple drivers: regs[3]/q_reg/Q, and regs[3]/q_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net regs[4]/q[0] has multiple drivers: regs[4]/q_reg__0/Q, and regs[4]/q_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net regs[5]/q[0] has multiple drivers: regs[5]/q_reg/Q, and regs[5]/q_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net regs[6]/q[0] has multiple drivers: regs[6]/q_reg__0/Q, and regs[6]/q_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net regs[7]/q[0] has multiple drivers: regs[7]/q_reg/Q, and regs[7]/q_reg__0/Q.
+INFO: [Project 1-461] DRC finished with 8 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.517 . Memory (MB): peak = 572.895 ; gain = 13.156
+INFO: [Common 17-83] Releasing license: Implementation
+9 Infos, 0 Warnings, 0 Critical Warnings and 9 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 20:45:06 2020...

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov  9 17:21:26 2020
+# Process ID: 10360
+# Current directory: G:/vivado_project/smg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2196 G:\vivado_project\smg\smg.xpr
+# Log file: G:/vivado_project/smg/vivado.log
+# Journal file: G:/vivado_project/smg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/vivado_project/smg/smg.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source sim_smg.tcl
+close_sim
+launch_simulation
+source sim_smg.tcl
+close_sim
+launch_simulation
+source sim_smg.tcl
+close_sim
+launch_simulation
+source sim_smg.tcl
+close_sim

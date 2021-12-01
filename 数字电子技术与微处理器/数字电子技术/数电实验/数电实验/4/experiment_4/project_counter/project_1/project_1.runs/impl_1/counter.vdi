@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  1 20:37:34 2020
+# Process ID: 13708
+# Current directory: C:/Users/96547/Desktop/vivado_project/project_counter/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log counter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source counter.tcl -notrace
+# Log file: C:/Users/96547/Desktop/vivado_project/project_counter/project_1/project_1.runs/impl_1/counter.vdi
+# Journal file: C:/Users/96547/Desktop/vivado_project/project_counter/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source counter.tcl -notrace
+Command: link_design -top counter -part xc7a35tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 553.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 559.379 ; gain = 306.063
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[0] has multiple drivers: count_reg[0]/Q, and count_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[10] has multiple drivers: count_reg[10]/Q, and count_reg[10]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[11] has multiple drivers: count_reg[11]__0/Q, and count_reg[11]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[12] has multiple drivers: count_reg[12]/Q, and count_reg[12]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[13] has multiple drivers: count_reg[13]__0/Q, and count_reg[13]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[14] has multiple drivers: count_reg[14]/Q, and count_reg[14]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[15] has multiple drivers: count_reg[15]__0/Q, and count_reg[15]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[16] has multiple drivers: count_reg[16]__0/Q, and count_reg[16]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[17] has multiple drivers: count_reg[17]__0/Q, and count_reg[17]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[18] has multiple drivers: count_reg[18]__0/Q, and count_reg[18]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[19] has multiple drivers: count_reg[19]__0/Q, and count_reg[19]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[1] has multiple drivers: count_reg[1]__0/Q, and count_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[20] has multiple drivers: count_reg[20]/Q, and count_reg[20]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[21] has multiple drivers: count_reg[21]__0/Q, and count_reg[21]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[22] has multiple drivers: count_reg[22]/Q, and count_reg[22]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[23] has multiple drivers: count_reg[23]/Q, and count_reg[23]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[24] has multiple drivers: count_reg[24]/Q, and count_reg[24]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[25] has multiple drivers: count_reg[25]/Q, and count_reg[25]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[26] has multiple drivers: count_reg[26]/Q, and count_reg[26]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[27] has multiple drivers: count_reg[27]__0/Q, and count_reg[27]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[28] has multiple drivers: count_reg[28]__0/Q, and count_reg[28]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[29] has multiple drivers: count_reg[29]__0/Q, and count_reg[29]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[2] has multiple drivers: count_reg[2]/Q, and count_reg[2]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[30] has multiple drivers: count_reg[30]__0/Q, and count_reg[30]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[3] has multiple drivers: count_reg[3]/Q, and count_reg[3]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[4] has multiple drivers: count_reg[4]/Q, and count_reg[4]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[5] has multiple drivers: count_reg[5]/Q, and count_reg[5]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[6] has multiple drivers: count_reg[6]__0/Q, and count_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[7] has multiple drivers: count_reg[7]/Q, and count_reg[7]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[8] has multiple drivers: count_reg[8]/Q, and count_reg[8]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net count[9] has multiple drivers: count_reg[9]/Q, and count_reg[9]__0/Q.
+INFO: [Project 1-461] DRC finished with 31 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.536 . Memory (MB): peak = 573.781 ; gain = 14.402
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 0 Warnings, 0 Critical Warnings and 32 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 20:37:42 2020...

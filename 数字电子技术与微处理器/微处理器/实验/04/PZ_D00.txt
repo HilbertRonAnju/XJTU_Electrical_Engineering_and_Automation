@@ -1,0 +1,102 @@
+Configuration	PZ_D00
+STM32CubeMX 	5.5.0
+Date	11/26/2020
+MCU	STM32F103ZETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN1	ADC1_IN1	PA1
+ADC1	IN2	ADC1_IN2	PA2
+RTC	Activate Clock Source	RTC_VS_RTC_Activate	VP_RTC_VS_RTC_Activate
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM3	Internal Clock	TIM3_VS_ClockSourceINT	VP_TIM3_VS_ClockSourceINT
+TIM3	PWM Generation CH2	TIM3_CH2	PC7
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+1	PE2	GPIO_Input	
+2	PE3	GPIO_Input	
+3	PE4	GPIO_Input	
+26	PC0	GPIO_Output	
+27	PC1	GPIO_Output	
+28	PC2	GPIO_Output	
+29	PC3	GPIO_Output	
+34	PA0-WKUP	GPIO_Input	
+35	PA1	ADC1_IN1	
+36	PA2	ADC1_IN2	
+44	PC4	GPIO_Output	
+45	PC5	GPIO_Output	
+96	PC6	GPIO_Output	
+97	PC7	TIM3_CH2	
+101	PA9	USART1_TX	
+102	PA10	USART1_RX	
+105	PA13	SYS_JTMS-SWDIO	
+109	PA14	SYS_JTCK-SWCLK	
+135	PB5	GPIO_Output	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN1	ADC1_IN1	PA1
+ADC1	IN2	ADC1_IN2	PA2
+RTC	Activate Clock Source	RTC_VS_RTC_Activate	VP_RTC_VS_RTC_Activate
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM3	Internal Clock	TIM3_VS_ClockSourceINT	VP_TIM3_VS_ClockSourceINT
+TIM3	PWM Generation CH2	TIM3_CH2	PC7
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+1	PE2	GPIO_Input	
+2	PE3	GPIO_Input	
+3	PE4	GPIO_Input	
+26	PC0	GPIO_Output	
+27	PC1	GPIO_Output	
+28	PC2	GPIO_Output	
+29	PC3	GPIO_Output	
+34	PA0-WKUP	GPIO_Input	
+35	PA1	ADC1_IN1	
+36	PA2	ADC1_IN2	
+44	PC4	GPIO_Output	
+45	PC5	GPIO_Output	
+96	PC6	GPIO_Output	
+97	PC7	TIM3_CH2	
+101	PA9	USART1_TX	
+102	PA10	USART1_RX	
+105	PA13	SYS_JTMS-SWDIO	
+109	PA14	SYS_JTCK-SWCLK	
+135	PB5	GPIO_Output	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : PZ_D00
+Project Folder : D:\STM\PZ_D00
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F1 V1.8.3
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+

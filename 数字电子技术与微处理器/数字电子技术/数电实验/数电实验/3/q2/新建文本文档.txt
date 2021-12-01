@@ -1,0 +1,38 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2020/10/27 16:44:05
+// Design Name: 
+// Module Name: sishiliudecoder_1
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module sishiliudecoder_1(
+input [3:0]a,
+input en,
+output [15:0]z
+ );
+project_2 u1(
+ .a(a[2:0]),
+ .en(~a[3]&en),
+ .y(z[7:0])
+ );
+project_2 u2(
+ .a(a[2:0]),
+ .en(a[3]&en),
+ .y(z[15:8])
+ );
+endmodule

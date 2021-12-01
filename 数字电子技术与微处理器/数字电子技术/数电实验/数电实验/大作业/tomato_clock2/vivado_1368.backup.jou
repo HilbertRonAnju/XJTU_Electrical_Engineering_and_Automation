@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov 23 15:14:59 2020
+# Process ID: 1368
+# Current directory: C:/Users/10021/Desktop/anjiankongzhidaojishi_counter25
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10160 C:\Users\10021\Desktop\anjiankongzhidaojishi_counter25\anjiankongzhidaojishi.xpr
+# Log file: C:/Users/10021/Desktop/anjiankongzhidaojishi_counter25/vivado.log
+# Journal file: C:/Users/10021/Desktop/anjiankongzhidaojishi_counter25\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/10021/Desktop/anjiankongzhidaojishi_counter25/anjiankongzhidaojishi.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

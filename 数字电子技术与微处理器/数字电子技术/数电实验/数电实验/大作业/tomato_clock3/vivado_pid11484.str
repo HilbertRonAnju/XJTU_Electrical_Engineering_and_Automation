@@ -1,0 +1,126 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 11484
+License: Customer
+
+Current time: 	Mon Nov 30 21:52:05 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2736x1824
+Screen resolution (DPI): 192
+Available screens: 1
+Available disk space: 64 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=24
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	96547
+User home directory: C:/Users/96547
+User working directory: F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2018.3
+RDI_DATADIR: D:/Vivado/2018.3/data
+RDI_BINDIR: D:/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/96547/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/96547/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/96547/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/vivado.log
+Vivado journal file location: 	F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/vivado.jou
+Engine tmp dir: 	F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/.Xil/Vivado-11484-聂永欣のsurface
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2018.3
+XILINX_SDK: D:/SDK/2018.3
+XILINX_VIVADO: D:/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 673 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 81 MB (+82691kb) [00:00:07]
+// [Engine Memory]: 648 MB (+528210kb) [00:00:07]
+// [GUI Memory]: 93 MB (+7776kb) [00:00:08]
+// [GUI Memory]: 113 MB (+16083kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  2490 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 57 MB. Current time: 11/30/20, 9:52:06 PM CST
+// [Engine Memory]: 692 MB (+11913kb) [00:00:10]
+// Project name: smg; location: F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro; part: xc7a35tcsg324-1
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 120 MB (+1713kb) [00:00:21]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (D, cp) - Node
+// [GUI Memory]: 129 MB (+3121kb) [00:00:21]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), rstctrl : rstreg (rstreg.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// [Engine Memory]: 729 MB (+2224kb) [00:00:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 729 MB. GUI used memory: 68 MB. Current time: 11/30/20, 10:22:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 729 MB. GUI used memory: 62 MB. Current time: 11/30/20, 10:52:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 729 MB. GUI used memory: 45 MB. Current time: 11/30/20, 11:22:11 PM CST
+// Elapsed time: 5899 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcsg324-1 Top: top 

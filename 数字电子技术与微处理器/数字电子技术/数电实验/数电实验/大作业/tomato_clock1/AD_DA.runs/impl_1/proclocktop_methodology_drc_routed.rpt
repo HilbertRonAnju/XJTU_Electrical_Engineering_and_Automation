@@ -1,0 +1,1135 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Dec  1 22:09:22 2020
+| Host         : DESKTOP-H2P5GO8 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file proclocktop_methodology_drc_routed.rpt -pb proclocktop_methodology_drc_routed.pb -rpx proclocktop_methodology_drc_routed.rpx
+| Design       : proclocktop
+| Device       : xc7a35tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 220
++-----------+----------+-----------------------------+------------+
+| Rule      | Severity | Description                 | Violations |
++-----------+----------+-----------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell | 220        |
++-----------+----------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[0].nolabel_line56/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[0].nolabel_line56/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[0].nolabel_line56/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[0].nolabel_line56/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[0].nolabel_line56/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[0].nolabel_line56/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[0].nolabel_line56/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[0].nolabel_line56/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[1].nolabel_line56/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[1].nolabel_line56/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[1].nolabel_line56/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[1].nolabel_line56/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[1].nolabel_line56/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[1].nolabel_line56/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[1].nolabel_line56/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[1].nolabel_line56/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[2].nolabel_line56/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[2].nolabel_line56/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[2].nolabel_line56/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[2].nolabel_line56/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[2].nolabel_line56/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[2].nolabel_line56/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[2].nolabel_line56/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[2].nolabel_line56/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[3].nolabel_line56/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[3].nolabel_line56/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[3].nolabel_line56/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[3].nolabel_line56/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[3].nolabel_line56/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[3].nolabel_line56/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[3].nolabel_line56/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[3].nolabel_line56/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[6].nolabel_line56/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[6].nolabel_line56/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[6].nolabel_line56/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[6].nolabel_line56/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[6].nolabel_line56/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[6].nolabel_line56/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[6].nolabel_line56/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[6].nolabel_line56/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[7].nolabel_line56/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[7].nolabel_line56/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[7].nolabel_line56/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[7].nolabel_line56/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[7].nolabel_line56/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[7].nolabel_line56/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[7].nolabel_line56/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Warning
+Non-clocked sequential cell  
+The clock pin ENLOOP[7].nolabel_line56/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Warning
+Non-clocked sequential cell  
+The clock pin min/cstate_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Warning
+Non-clocked sequential cell  
+The clock pin min/nstate_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/min_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/min_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/min_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/min_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/min_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/min_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/min_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/sec_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/sec_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/sec_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#61 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/sec_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#62 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/sec_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#63 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/sec_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#64 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line114/sec_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#65 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line40/U1/inst/DCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line40/U2/led_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line40/U2/led_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line40/U2/led_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line40/U2/led_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#70 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line40/U2/led_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#71 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line40/U2/led_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line40/U2/led_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line40/U2/led_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U0/i_sig1_reg0_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U0/i_sig1_reg1_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#76 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U0/i_sig2_reg0_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#77 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U0/i_sig2_reg1_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#78 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#79 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#80 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#81 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#82 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#83 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#84 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#85 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#86 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#87 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#88 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#89 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#90 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#91 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#92 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#93 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#94 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#95 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#96 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#97 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/cnt_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#98 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U0/sec_pule_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#99 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U1/cstate_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#100 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U1/cstate_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#101 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/carry2_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#102 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/carry_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#103 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#104 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#105 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#106 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#107 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#108 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#109 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#110 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#111 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#112 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#113 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#114 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#115 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#116 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#117 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#118 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#119 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#120 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#121 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/clkdiv_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#122 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#123 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#124 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#125 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#126 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#127 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#128 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#129 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#130 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#131 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#132 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#133 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#134 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#135 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#136 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#137 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/cnt25_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#138 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/counter_reg[0]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#139 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/counter_reg[1]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#140 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/counter_reg[2]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#141 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/counter_reg[3]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#142 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U1/U2/innerbreak_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#143 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#144 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#145 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#146 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#147 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#148 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#149 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#150 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#151 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#152 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#153 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#154 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#155 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#158 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#159 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#160 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/clkdiv_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#161 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#162 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#163 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#164 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#165 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#166 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#167 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#168 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/U2/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#169 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#170 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#171 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#172 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#173 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#174 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#175 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#176 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#177 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#178 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#179 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#180 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#181 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#182 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#183 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#184 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#185 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#186 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#187 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#188 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/cnt_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#189 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line67/nolabel_line13/sec_pule_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#190 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#191 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#192 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#193 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#194 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#195 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#196 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#197 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#198 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#199 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#200 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#201 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#202 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#203 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#204 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#205 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#206 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#207 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#208 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#209 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/cnt_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#210 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line78/sec_pule_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#211 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line82/i_sig1_reg0_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#212 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line82/i_sig1_reg1_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#213 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line82/i_sig2_reg0_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#214 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line82/i_sig2_reg1_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#215 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line89/i_sig1_reg0_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#216 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line89/i_sig1_reg1_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#217 Warning
+Non-clocked sequential cell  
+The clock pin sec/cstate_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#218 Warning
+Non-clocked sequential cell  
+The clock pin sec/nstate_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#219 Warning
+Non-clocked sequential cell  
+The clock pin timerst/cstate_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#220 Warning
+Non-clocked sequential cell  
+The clock pin timerst/nstate_reg/C is not reached by a timing clock
+Related violations: <none>
+
+

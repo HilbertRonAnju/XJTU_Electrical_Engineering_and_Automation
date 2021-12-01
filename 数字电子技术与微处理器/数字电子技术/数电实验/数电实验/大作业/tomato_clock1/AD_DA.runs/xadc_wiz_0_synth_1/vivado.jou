@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov 29 16:39:56 2020
+# Process ID: 8088
+# Current directory: D:/EGO1/AD_DA/AD_DA.runs/xadc_wiz_0_synth_1
+# Command line: vivado.exe -log xadc_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xadc_wiz_0.tcl
+# Log file: D:/EGO1/AD_DA/AD_DA.runs/xadc_wiz_0_synth_1/xadc_wiz_0.vds
+# Journal file: D:/EGO1/AD_DA/AD_DA.runs/xadc_wiz_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source xadc_wiz_0.tcl -notrace

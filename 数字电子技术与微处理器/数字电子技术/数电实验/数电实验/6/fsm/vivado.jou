@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 17 15:37:26 2020
+# Process ID: 8036
+# Current directory: F:/桌面/西安交通大学/数字电子技术与微处理器/数电实验/数电实验/6/fsm
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5148 F:\桌面\西安交通大学\数字电子技术与微处理器\数电实验\数电实验\6\fsm\fsm.xpr
+# Log file: F:/桌面/西安交通大学/数字电子技术与微处理器/数电实验/数电实验/6/fsm/vivado.log
+# Journal file: F:/桌面/西安交通大学/数字电子技术与微处理器/数电实验/数电实验/6/fsm\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/桌面/西安交通大学/数字电子技术与微处理器/数电实验/数电实验/6/fsm/fsm.xpr
+update_compile_order -fileset sources_1

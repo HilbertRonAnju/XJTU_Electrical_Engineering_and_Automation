@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov  9 17:51:51 2020
+# Process ID: 3340
+# Current directory: G:/vivado_project/day3/smg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3036 G:\vivado_project\day3\smg\smg.xpr
+# Log file: G:/vivado_project/day3/smg/vivado.log
+# Journal file: G:/vivado_project/day3/smg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/vivado_project/day3/smg/smg.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse G:/vivado_project/day3/smg/smg.srcs/sources_1/new/sec.v
+update_compile_order -fileset sources_1
+close [ open G:/vivado_project/day3/smg/smg.srcs/sources_1/new/muldisp.v w ]
+add_files G:/vivado_project/day3/smg/smg.srcs/sources_1/new/muldisp.v
+update_compile_order -fileset sources_1

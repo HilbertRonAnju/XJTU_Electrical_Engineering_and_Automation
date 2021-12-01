@@ -1,0 +1,83 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Dec 26 18:44:57 2020
+| Host         : DESKTOP-VJ3AKJL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    54 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      3 |            1 |
+|      5 |            2 |
+|      8 |            1 |
+|      9 |            1 |
+|     12 |            1 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              39 |           16 |
+| No           | No                    | Yes                    |              49 |           16 |
+| No           | Yes                   | No                     |              75 |           23 |
+| Yes          | No                    | No                     |              13 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              26 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+--------------------------+---------------------------+------------------+----------------+
+|     Clock Signal    |       Enable Signal      |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++---------------------+--------------------------+---------------------------+------------------+----------------+
+|  sys_clk_IBUF_BUFG  |                          | d1/an[1]_i_1_n_0          |                1 |              1 |
+| ~clk1/clk_100_reg_0 |                          |                           |                1 |              3 |
+|  clk_select_BUFG    | auto1/tone0              | auto1/count[19]_i_1_n_0   |                4 |              5 |
+|  sys_clk_IBUF_BUFG  | ps2_1/key_out[4]_i_1_n_0 |                           |                3 |              5 |
+|  sys_clk_IBUF_BUFG  | ps2_1/key_value_0        |                           |                3 |              8 |
+|  clk1/clk_100_reg_0 |                          |                           |                4 |              9 |
+| ~ps2_1/PS2CF        |                          | ps2_1/rst                 |                3 |             12 |
+|  sys_clk_IBUF_BUFG  |                          | clk1/clear                |                5 |             20 |
+|  sys_clk_IBUF_BUFG  | auto1/tone_reg[3]_2      | auto1/count0              |                6 |             21 |
+|  sys_clk_IBUF_BUFG  |                          | clk1/count20_carry__2_n_3 |                7 |             26 |
+|  sys_clk_IBUF_BUFG  |                          |                           |               11 |             27 |
+|  clk_select_BUFG    |                          | auto1/count[19]_i_1_n_0   |               10 |             28 |
+|  sys_clk_IBUF_BUFG  |                          | ps2_1/rst                 |               13 |             37 |
++---------------------+--------------------------+---------------------------+------------------+----------------+
+
+

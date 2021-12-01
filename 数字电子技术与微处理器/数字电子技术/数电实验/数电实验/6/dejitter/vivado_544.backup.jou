@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 16 21:46:34 2020
+# Process ID: 544
+# Current directory: G:/vivado_project/day4/fsm
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4104 G:\vivado_project\day4\fsm\fsm.xpr
+# Log file: G:/vivado_project/day4/fsm/vivado.log
+# Journal file: G:/vivado_project/day4/fsm\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/vivado_project/day4/fsm/fsm.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source fsm.tcl
+update_compile_order -fileset sources_1
+launch_simulation
+source sim_fsm.tcl
+current_wave_config {Untitled 2}
+add_wave {{/sim_fsm/u1/cnt_en}} 
+current_wave_config {Untitled 2}
+add_wave {{/sim_fsm/u1/load}} 
+current_wave_config {Untitled 2}
+add_wave {{/sim_fsm/u1/cstate}} 
+current_wave_config {Untitled 2}
+add_wave {{/sim_fsm/u1/nstate}} 
+restart
+restart
+run all
+restart
+save_wave_config {G:/vivado_project/day4/fsm/sim_fsm_behav.wcfg}
+add_files -fileset sim_1 -norecurse G:/vivado_project/day4/fsm/sim_fsm_behav.wcfg
+set_property xsim.view G:/vivado_project/day4/fsm/sim_fsm_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config G:/vivado_project/day4/fsm/sim_fsm_behav.wcfg
+source sim_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config G:/vivado_project/day4/fsm/sim_fsm_behav.wcfg
+source sim_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config G:/vivado_project/day4/fsm/sim_fsm_behav.wcfg
+source sim_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config G:/vivado_project/day4/fsm/sim_fsm_behav.wcfg
+source sim_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config G:/vivado_project/day4/fsm/sim_fsm_behav.wcfg
+source sim_fsm.tcl
+close_sim
+close_sim

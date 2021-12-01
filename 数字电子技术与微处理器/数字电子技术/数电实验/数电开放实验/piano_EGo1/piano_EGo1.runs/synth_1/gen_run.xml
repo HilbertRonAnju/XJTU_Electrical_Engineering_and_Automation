@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1595578661">
+  <File Type="PA-TCL" Name="top_piano.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_piano_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top_piano.vds"/>
+  <File Type="RDS-UTIL" Name="top_piano_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_piano_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_piano.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/keyboard.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ele_piano/ele_piano.srcs/sources_1/imports/sources_1/new/keyboard.v"/>
+        <Attr Name="ImportTime" Val="1520821530"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/play.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ele_piano/ele_piano.srcs/sources_1/imports/sources_1/new/play.v"/>
+        <Attr Name="ImportTime" Val="1520677876"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ps2_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ele_piano/ele_piano.srcs/sources_1/imports/sources_1/new/ps2_rx.v"/>
+        <Attr Name="ImportTime" Val="1504139790"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/sound.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ele_piano/ele_piano.srcs/sources_1/imports/sources_1/new/sound.v"/>
+        <Attr Name="ImportTime" Val="1520754670"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/vga_draw.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ele_piano/ele_piano.srcs/sources_1/imports/sources_1/imports/new/vga_draw.v"/>
+        <Attr Name="ImportTime" Val="1520676302"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/vga_sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ele_piano/ele_piano.srcs/sources_1/imports/sources_1/imports/new/vga_sync.v"/>
+        <Attr Name="ImportTime" Val="1520674566"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/top_piano.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ele_piano/ele_piano.srcs/sources_1/imports/sources_1/new/top_piano.v"/>
+        <Attr Name="ImportTime" Val="1563285052"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_piano"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/piano_EGo1.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/piano_EGo1.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="dcm_clk"/>
+</GenRun>

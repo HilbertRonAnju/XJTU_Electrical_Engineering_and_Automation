@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jul 24 16:18:55 2020
+# Process ID: 12724
+# Current directory: D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/impl_1
+# Command line: vivado.exe -log top_piano.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_piano.tcl -notrace
+# Log file: D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/impl_1/top_piano.vdi
+# Journal file: D:/List_Vivado/2017_4/piano_EGo1/piano_EGo1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_piano.tcl -notrace

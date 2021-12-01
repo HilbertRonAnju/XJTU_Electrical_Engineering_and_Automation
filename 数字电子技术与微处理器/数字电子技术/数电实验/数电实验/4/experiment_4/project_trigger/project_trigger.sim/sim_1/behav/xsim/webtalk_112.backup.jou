@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  1 22:07:34 2020
+# Process ID: 112
+# Current directory: C:/Users/96547/Desktop/vivado_project/project_trigger/project_trigger.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/96547/Desktop/vivado_project/project_trigger/project_trigger.sim/sim_1/behav/xsim/xsim.dir/sim_trigger_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/96547/Desktop/vivado_project/project_trigger/project_trigger.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/96547/Desktop/vivado_project/project_trigger/project_trigger.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/96547/Desktop/vivado_project/project_trigger/project_trigger.sim/sim_1/behav/xsim/xsim.dir/sim_trigger_behav/webtalk/xsim_webtalk.tcl -notrace

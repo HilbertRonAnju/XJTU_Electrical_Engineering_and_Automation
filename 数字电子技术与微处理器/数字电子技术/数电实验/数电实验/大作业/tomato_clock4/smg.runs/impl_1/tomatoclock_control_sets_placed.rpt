@@ -1,0 +1,113 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 16 21:32:30 2020
+| Host         : DESKTOP-H2P5GO8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file tomatoclock_control_sets_placed.rpt
+| Design       : tomatoclock
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    44 |
+| Unused register locations in slices containing registers |   248 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           26 |
+|      2 |            2 |
+|      4 |            9 |
+|      8 |            1 |
+|      9 |            2 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |           11 |
+| No           | No                    | Yes                    |              20 |           15 |
+| No           | Yes                   | No                     |             140 |           42 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              28 |           14 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+---------------------------+-----------------------------------------+------------------+----------------+
+|            Clock Signal            |       Enable Signal       |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++------------------------------------+---------------------------+-----------------------------------------+------------------+----------------+
+|  work/minnum_reg[4]_LDC_i_1_n_0    |                           | work/minnum_reg[4]_LDC_i_2_n_0          |                1 |              1 |
+|  work/minnum_reg[3]_LDC_i_1_n_0    |                           | work/minnum_reg[3]_LDC_i_2_n_0          |                1 |              1 |
+|  work/secoverflow                  |                           | work/minnum_reg[2]_LDC_i_2_n_0          |                1 |              1 |
+|  work/secoverflow                  |                           | work/minnum_reg[1]_LDC_i_2__0_n_0       |                1 |              1 |
+|  work/secoverflow                  |                           | work/minnum_reg[0]_LDC_i_2_n_0          |                1 |              1 |
+|  work/minnum_reg[1]_LDC_i_1__0_n_0 |                           | work/minnum_reg[1]_LDC_i_2__0_n_0       |                1 |              1 |
+|  work/secoverflow                  |                           | work/minnum_reg[3]_LDC_i_2_n_0          |                1 |              1 |
+|  idle/secgen/CLK                   |                           |                                         |                1 |              1 |
+|  work/secoverflow                  |                           | work/minnum_reg[5]_LDC_i_2_n_0          |                1 |              1 |
+|  work/secoverflow                  |                           | work/minnum_reg[4]_LDC_i_2_n_0          |                1 |              1 |
+|  work/secoverflow                  | work/secnum0__6           | work/minnum_reg[1]_LDC_i_1__0_n_0       |                1 |              1 |
+|  idle/minnum_reg[1]_LDC_i_1_n_0    |                           | idle/minnum_reg[1]_LDC_i_2_n_0          |                1 |              1 |
+|  idle/minnum_reg[0]_LDC_i_1__0_n_0 |                           | idle/minnum_reg[0]_LDC_i_2__0_n_0       |                1 |              1 |
+|  work/secoverflow                  | work/secnum0__6           | work/minnum_reg[0]_LDC_i_1_n_0          |                1 |              1 |
+|  idle/secoverflow_reg_n_0          |                           | idle/minnum_reg[0]_LDC_i_2__0_n_0       |                1 |              1 |
+|  idle/secoverflow_reg_n_0          |                           | idle/minnum_reg[1]_LDC_i_2_n_0          |                1 |              1 |
+|  work/secoverflow                  | work/secnum0__6           | work/minnum_reg[3]_LDC_i_1_n_0          |                1 |              1 |
+|  idle/secoverflow_reg_n_0          | idle/secnum0__6           | idle/minnum_reg[1]_LDC_i_1_n_0          |                1 |              1 |
+|  idle/secoverflow_reg_n_0          | idle/secnum0__6           | idle/minnum_reg[0]_LDC_i_1__0_n_0       |                1 |              1 |
+|  work/secoverflow                  | work/minnum[4]            | work/minnum_reg[5]_LDC_i_1_n_0          |                1 |              1 |
+|  work/secoverflow                  | work/minnum[4]            | work/minnum_reg[4]_LDC_i_1_n_0          |                1 |              1 |
+|  work/secgen/sec                   |                           |                                         |                1 |              1 |
+|  work/secoverflow                  | work/secnum0__6           | work/minnum_reg[2]_LDC_i_1_n_0          |                1 |              1 |
+|  work/minnum_reg[2]_LDC_i_1_n_0    |                           | work/minnum_reg[2]_LDC_i_2_n_0          |                1 |              1 |
+|  work/minnum_reg[5]_LDC_i_1_n_0    |                           | work/minnum_reg[5]_LDC_i_2_n_0          |                1 |              1 |
+|  work/minnum_reg[0]_LDC_i_1_n_0    |                           | work/minnum_reg[0]_LDC_i_2_n_0          |                1 |              1 |
+|  idle/secoverflow_reg_n_0          |                           | rst_IBUF                                |                2 |              2 |
+|  work/secoverflow                  |                           | work/minnum[7]_i_2__0_n_0               |                1 |              2 |
+|  idle/secgen/CLK                   | idle/secnum[7]_i_1__0_n_0 | rst_IBUF                                |                1 |              4 |
+|  idle/shownum/clock/sec_reg_0      |                           | idle/shownum/en[3]_i_1__0_n_0           |                1 |              4 |
+|  idle/secgen/CLK                   |                           | rst_IBUF                                |                3 |              4 |
+|  idle/secgen/CLK                   | idle/secnum[3]_i_1__0_n_0 | rst_IBUF                                |                1 |              4 |
+|  idle/secoverflow_reg_n_0          | idle/minnum[7]_i_1_n_0    | rst_IBUF                                |                1 |              4 |
+|  work/shownum/clock/sec_reg_0      |                           | work/shownum/en[3]_i_1_n_0              |                1 |              4 |
+|  work/secgen/sec                   |                           | work/minnum[7]_i_2__0_n_0               |                1 |              4 |
+|  work/secgen/sec                   | work/secnum[3]            | work/minnum[7]_i_2__0_n_0               |                2 |              4 |
+|  work/secgen/sec                   | work/secnum[4]            | work/minnum[7]_i_2__0_n_0               |                1 |              4 |
+|  clk_IBUF_BUFG                     |                           |                                         |                4 |              8 |
+|  idle/shownum/clock/sec_reg_0      |                           |                                         |                2 |              9 |
+|  work/shownum/clock/sec_reg_0      |                           |                                         |                3 |              9 |
+|  clk_IBUF_BUFG                     |                           | idle/shownum/clock/count[31]_i_1__2_n_0 |                8 |             31 |
+|  clk_IBUF_BUFG                     |                           | idle/secgen/count[31]_i_1__1_n_0        |                8 |             31 |
+|  clk_IBUF_BUFG                     |                           | work/shownum/clock/count[31]_i_1__0_n_0 |                8 |             31 |
+|  clk_IBUF_BUFG                     |                           | work/secgen/count[31]_i_1_n_0           |                8 |             31 |
++------------------------------------+---------------------------+-----------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec  2 15:54:02 2020
+# Process ID: 8768
+# Current directory: C:/Users/96547/Desktop/DAC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11764 C:\Users\96547\Desktop\DAC\Experiment_7_0_DAC_SawtoothWave.xpr
+# Log file: C:/Users/96547/Desktop/DAC/vivado.log
+# Journal file: C:/Users/96547/Desktop/DAC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/96547/Desktop/DAC/Experiment_7_0_DAC_SawtoothWave.xpr
+update_compile_order -fileset sources_1

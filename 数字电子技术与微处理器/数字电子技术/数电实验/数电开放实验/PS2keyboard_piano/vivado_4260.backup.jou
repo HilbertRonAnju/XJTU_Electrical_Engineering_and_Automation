@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 25 21:12:53 2020
+# Process ID: 4260
+# Current directory: F:/FPGA_Project/altrea/PS2keyboard_piano
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4856 F:\FPGA_Project\altrea\PS2keyboard_piano\PIANO_1.xpr
+# Log file: F:/FPGA_Project/altrea/PS2keyboard_piano/vivado.log
+# Journal file: F:/FPGA_Project/altrea/PS2keyboard_piano\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA_Project/altrea/PS2keyboard_piano/PIANO_1.xpr
+update_compile_order -fileset sources_1

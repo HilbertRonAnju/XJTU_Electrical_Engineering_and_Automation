@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 11 09:53:55 2020
+# Process ID: 9524
+# Current directory: C:/Users/96547/Desktop/My_x7seg_1bit/My_x7seg_1bit.runs/impl_1
+# Command line: vivado.exe -log My_x7seg_1bit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source My_x7seg_1bit.tcl -notrace
+# Log file: C:/Users/96547/Desktop/My_x7seg_1bit/My_x7seg_1bit.runs/impl_1/My_x7seg_1bit.vdi
+# Journal file: C:/Users/96547/Desktop/My_x7seg_1bit/My_x7seg_1bit.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source My_x7seg_1bit.tcl -notrace

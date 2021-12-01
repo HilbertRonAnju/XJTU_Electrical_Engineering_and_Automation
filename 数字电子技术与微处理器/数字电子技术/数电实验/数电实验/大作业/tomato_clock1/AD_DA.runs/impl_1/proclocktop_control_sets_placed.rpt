@@ -1,0 +1,86 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Dec  1 22:08:54 2020
+| Host         : DESKTOP-H2P5GO8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file proclocktop_control_sets_placed.rpt
+| Design       : proclocktop
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    17 |
+| Unused register locations in slices containing registers |    53 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            6 |
+|      6 |            2 |
+|      7 |            1 |
+|      8 |            2 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              77 |           25 |
+| No           | No                    | Yes                    |              43 |           14 |
+| No           | Yes                   | No                     |              60 |           17 |
+| Yes          | No                    | No                     |              12 |            3 |
+| Yes          | No                    | Yes                    |              16 |            8 |
+| Yes          | Yes                   | No                     |              11 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+-------------------------------------------+-----------------------------------------------+------------------+----------------+
+|               Clock Signal              |               Enable Signal               |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++-----------------------------------------+-------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  nolabel_line67/U0/carry0               |                                           |                                               |                1 |              1 |
+|  nolabel_line67/nolabel_line13/sec_pule |                                           |                                               |                1 |              4 |
+|  nolabel_line67/U1/U0/sec_pule_reg_0    |                                           |                                               |                3 |              4 |
+|  nolabel_line67/U1/U0/sec_pule_reg_0    | nolabel_line67/U1/U2/counter[3]_C_i_1_n_0 |                                               |                1 |              4 |
+|  nolabel_line67/U1/U0/sec_pule_reg_0    | nolabel_line67/U1/U2/cnt25[7]_i_1_n_0     | nolabel_line67/U1/U2/reset_in                 |                2 |              4 |
+|  nolabel_line67/U1/U0/sec_pule_reg_0    | nolabel_line67/U1/U1/E[0]                 | nolabel_line67/U1/U2/reset_in                 |                3 |              4 |
+|  dclk_in_IBUF_BUFG                      | timerst/min                               | min/cstate_reg_0                              |                2 |              4 |
+|  nolabel_line67/U1/U0/sec_pule_reg_0    |                                           | nolabel_line67/U1/U2/reset_in                 |                4 |              6 |
+|  nolabel_line78/sec_pule                |                                           |                                               |                1 |              6 |
+|  dclk_in_IBUF_BUFG                      | min/E[0]                                  | nolabel_line114/sec[6]_i_1_n_0                |                2 |              7 |
+| ~nolabel_line67/U1/U2/carry2_reg_0      | nolabel_line67/U2/count_0                 | nolabel_line67/U1/U2/reset_in                 |                3 |              8 |
+|  dclk_in_IBUF_BUFG                      | nolabel_line40/U1/drdy_out                |                                               |                2 |              8 |
+|  dclk_in_IBUF_BUFG                      |                                           | nolabel_line67/nolabel_line13/cnt[19]_i_1_n_0 |                6 |             20 |
+|  dclk_in_IBUF_BUFG                      |                                           | nolabel_line67/U1/U0/cnt[19]_i_1__0_n_0       |                6 |             20 |
+|  dclk_in_IBUF_BUFG                      |                                           | nolabel_line78/cnt[19]_i_1__1_n_0             |                5 |             20 |
+|  dclk_in_IBUF_BUFG                      |                                           | nolabel_line67/U1/U2/reset_in                 |               10 |             37 |
+|  dclk_in_IBUF_BUFG                      |                                           |                                               |               19 |             62 |
++-----------------------------------------+-------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+

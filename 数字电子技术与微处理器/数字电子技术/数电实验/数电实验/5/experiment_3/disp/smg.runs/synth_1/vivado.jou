@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 10 01:59:11 2020
+# Process ID: 11100
+# Current directory: G:/vivado_project/day3/disp/smg.runs/synth_1
+# Command line: vivado.exe -log smg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source smg.tcl
+# Log file: G:/vivado_project/day3/disp/smg.runs/synth_1/smg.vds
+# Journal file: G:/vivado_project/day3/disp/smg.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source smg.tcl -notrace

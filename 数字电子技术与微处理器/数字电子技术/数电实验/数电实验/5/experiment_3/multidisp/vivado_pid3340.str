@@ -1,0 +1,386 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 3340
+License: Customer
+
+Current time: 	Mon Nov 09 17:52:07 JST 2020
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 128 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	G:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	G:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Áõ¿ËîÈ
+User home directory: C:/Users/Áõ¿ËîÈ
+User working directory: G:/vivado_project/day3/smg
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: G:/Xilinx/Vivado
+HDI_APPROOT: G:/Xilinx/Vivado/2018.3
+RDI_DATADIR: G:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: G:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Áõ¿ËîÈ/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Áõ¿ËîÈ/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Áõ¿ËîÈ/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	G:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	G:/vivado_project/day3/smg/vivado.log
+Vivado journal file location: 	G:/vivado_project/day3/smg/vivado.jou
+Engine tmp dir: 	G:/vivado_project/day3/smg/.Xil/Vivado-3340-DESKTOP-H2P5GO8
+
+Xilinx Environment Variables
+----------------------------
+XILINX: G:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: G:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: G:/Xilinx/Vivado/2018.3
+XILINX_SDK: G:/Xilinx/SDK/2018.3
+XILINX_VIVADO: G:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: G:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 609 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: G:\vivado_project\day3\smg\smg.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project G:/vivado_project/day3/smg/smg.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project G:/vivado_project/day3/smg/smg.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'G:/vivado_project/smg' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 91 MB (+93084kb) [00:00:13]
+// [Engine Memory]: 673 MB (+554129kb) [00:00:13]
+// [GUI Memory]: 106 MB (+10922kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  3772 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 682 MB. GUI used memory: 52 MB. Current time: 11/9/20, 5:52:13 PM JST
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 710.059 ; gain = 129.137 
+// Project name: smg; location: G:/vivado_project/day3/smg; part: xc7a35tcsg324-1
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 721 MB (+15438kb) [00:00:18]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 30 seconds
+setFileChooser("G:/vivado_project/day3/smg/smg.srcs/sources_1/new/sec.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 38 seconds
+// [Engine Memory]: 767 MB (+9923kb) [00:01:08]
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse G:/vivado_project/day3/smg/smg.srcs/sources_1/new/sec.v 
+// HMemoryUtils.trashcanNow. Engine heap size: 772 MB. GUI used memory: 52 MB. Current time: 11/9/20, 5:53:09 PM JST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sec (sec.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sec (sec.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("sec.v", 209, 201); // cl (w, cp)
+selectCodeEditor("sec.v", 229, 117); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("sec.v", 325, 168); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sec.v", 1); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smg (smg.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 16 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "muldisp"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 28 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open G:/vivado_project/day3/smg/smg.srcs/sources_1/new/muldisp.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files G:/vivado_project/day3/smg/smg.srcs/sources_1/new/muldisp.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muldisp (muldisp.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muldisp (muldisp.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("muldisp.v", 122, 412); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sec (sec.v)]", 3, false); // B (D, cp)
+// [GUI Memory]: 112 MB (+402kb) [00:02:37]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muldisp (muldisp.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smg (smg.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smg (smg.v)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, con_smg1.xdc]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, con_smg1.xdc]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sec (sec.v)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muldisp (muldisp.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muldisp (muldisp.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("muldisp.v", 111, 408); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("muldisp.v", 81, 393); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("muldisp.v", 242, 420); // cl (w, cp)
+selectCodeEditor("muldisp.v", 205, 386); // cl (w, cp)
+selectCodeEditor("muldisp.v", 155, 384); // cl (w, cp)
+selectCodeEditor("muldisp.v", 207, 389); // cl (w, cp)
+selectCodeEditor("muldisp.v", 192, 386); // cl (w, cp)
+selectCodeEditor("muldisp.v", 197, 389); // cl (w, cp)
+selectCodeEditor("muldisp.v", 274, 429); // cl (w, cp)
+selectCodeEditor("muldisp.v", 155, 388); // cl (w, cp)
+selectCodeEditor("muldisp.v", 197, 436); // cl (w, cp)
+selectCodeEditor("muldisp.v", 207, 394); // cl (w, cp)
+selectCodeEditor("muldisp.v", 194, 390); // cl (w, cp)
+typeControlKey((HResource) null, "muldisp.v", 'v'); // cl (w, cp)
+selectCodeEditor("muldisp.v", 130, 422); // cl (w, cp)
+selectCodeEditor("muldisp.v", 109, 408); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("muldisp.v", 76, 375); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("muldisp.v", 93, 390); // cl (w, cp)
+selectCodeEditor("muldisp.v", 69, 363); // cl (w, cp)
+typeControlKey((HResource) null, "muldisp.v", 'v'); // cl (w, cp)
+selectCodeEditor("muldisp.v", 281, 420); // cl (w, cp)
+selectCodeEditor("muldisp.v", 141, 367); // cl (w, cp)
+selectCodeEditor("muldisp.v", 148, 376); // cl (w, cp)
+selectCodeEditor("muldisp.v", 201, 437); // cl (w, cp)
+selectCodeEditor("muldisp.v", 114, 365); // cl (w, cp)
+selectCodeEditor("muldisp.v", 100, 368); // cl (w, cp)
+selectCodeEditor("muldisp.v", 147, 467); // cl (w, cp)
+selectCodeEditor("muldisp.v", 68, 397); // cl (w, cp)
+selectCodeEditor("muldisp.v", 173, 470); // cl (w, cp)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 201ms to process. Increasing delay to 2000 ms.
+selectCodeEditor("muldisp.v", 68, 392); // cl (w, cp)
+selectCodeEditor("muldisp.v", 168, 411); // cl (w, cp)
+selectCodeEditor("muldisp.v", 111, 368); // cl (w, cp)
+selectCodeEditor("muldisp.v", 165, 467); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("muldisp.v", 231, 418); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("muldisp.v", 231, 418); // cl (w, cp)
+selectCodeEditor("muldisp.v", 195, 488); // cl (w, cp)
+selectCodeEditor("muldisp.v", 195, 488); // cl (w, cp)
+// Elapsed time: 219 seconds
+selectCodeEditor("muldisp.v", 268, 278); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("muldisp.v", 244, 404); // cl (w, cp)
+selectCodeEditor("muldisp.v", 243, 422); // cl (w, cp)
+selectCodeEditor("muldisp.v", 63, 430); // cl (w, cp)
+selectCodeEditor("muldisp.v", 63, 430); // cl (w, cp)
+selectCodeEditor("muldisp.v", 69, 429); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smg (smg.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smg (smg.v)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "muldisp.v", 2); // k (j, cp)
+selectCodeEditor("muldisp.v", 44, 415); // cl (w, cp)
+selectCodeEditor("muldisp.v", 126, 443); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sec.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "muldisp.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "smg.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "muldisp.v", 2); // k (j, cp)
+selectCodeEditor("muldisp.v", 108, 450); // cl (w, cp)
+selectCodeEditor("muldisp.v", 134, 378); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sec (sec.v)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sec (sec.v)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sec (sec.v)]", 3, false); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sec.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "muldisp.v", 2); // k (j, cp)
+selectCodeEditor("muldisp.v", 115, 263); // cl (w, cp)
+selectCodeEditor("muldisp.v", 101, 448); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "smg.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sec.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "muldisp.v", 2); // k (j, cp)
+selectCodeEditor("muldisp.v", 137, 354); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("muldisp.v", 54, 167); // cl (w, cp)
+selectCodeEditor("muldisp.v", 61, 344); // cl (w, cp)
+selectCodeEditor("muldisp.v", 74, 313); // cl (w, cp)
+selectCodeEditor("muldisp.v", 139, 243); // cl (w, cp)
+selectCodeEditor("muldisp.v", 156, 388); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("muldisp.v", 107, 421); // cl (w, cp)
+selectCodeEditor("muldisp.v", 94, 213); // cl (w, cp)
+selectCodeEditor("muldisp.v", 71, 426); // cl (w, cp)
+selectCodeEditor("muldisp.v", 86, 215); // cl (w, cp)
+selectCodeEditor("muldisp.v", 77, 450); // cl (w, cp)
+selectCodeEditor("muldisp.v", 91, 223); // cl (w, cp)
+selectCodeEditor("muldisp.v", 138, 410); // cl (w, cp)
+selectCodeEditor("muldisp.v", 25, 413); // cl (w, cp)
+selectCodeEditor("muldisp.v", 153, 454); // cl (w, cp)
+selectCodeEditor("muldisp.v", 169, 409); // cl (w, cp)
+selectCodeEditor("muldisp.v", 20, 239); // cl (w, cp)
+selectCodeEditor("muldisp.v", 63, 441); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 772 MB. GUI used memory: 57 MB. Current time: 11/9/20, 6:23:09 PM JST
+// WARNING: HEventQueue.dispatchEvent() is taking  1317875 ms.
+// Elapsed time: 2744 seconds
+selectCodeEditor("muldisp.v", 608, 279); // cl (w, cp)
+selectCodeEditor("muldisp.v", 210, 387); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 772 MB. GUI used memory: 56 MB. Current time: 11/9/20, 6:53:10 PM JST
+selectCodeEditor("muldisp.v", 118, 412); // cl (w, cp)
+// Elapsed time: 53 seconds
+selectCodeEditor("muldisp.v", 36, 460); // cl (w, cp)
+selectCodeEditor("muldisp.v", 53, 418); // cl (w, cp)
+selectCodeEditor("muldisp.v", 97, 308); // cl (w, cp)
+selectCodeEditor("muldisp.v", 126, 420); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("muldisp.v", 143, 306); // cl (w, cp)
+selectCodeEditor("muldisp.v", 80, 460); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("muldisp.v", 328, 374); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("muldisp.v", 128, 319); // cl (w, cp)
+selectCodeEditor("muldisp.v", 138, 403); // cl (w, cp)
+selectCodeEditor("muldisp.v", 32, 314); // cl (w, cp)
+selectCodeEditor("muldisp.v", 159, 338); // cl (w, cp)
+selectCodeEditor("muldisp.v", 153, 393); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("muldisp.v", 24, 335); // cl (w, cp)
+selectCodeEditor("muldisp.v", 95, 397); // cl (w, cp)
+selectCodeEditor("muldisp.v", 61, 318); // cl (w, cp)
+selectCodeEditor("muldisp.v", 137, 404); // cl (w, cp)
+// Elapsed time: 41 seconds
+selectCodeEditor("muldisp.v", 119, 86); // cl (w, cp)
+selectCodeEditor("muldisp.v", 123, 83); // cl (w, cp)
+selectCodeEditor("muldisp.v", 141, 86); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sec.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "smg.v", 3); // k (j, cp)
+selectCodeEditor("smg.v", 47, 409); // cl (w, cp)
+typeControlKey((HResource) null, "smg.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "muldisp.v", 2); // k (j, cp)
+selectCodeEditor("muldisp.v", 114, 82); // cl (w, cp)
+selectCodeEditor("muldisp.v", 127, 160); // cl (w, cp)
+selectCodeEditor("muldisp.v", 115, 185); // cl (w, cp)
+selectCodeEditor("muldisp.v", 114, 80); // cl (w, cp)
+selectCodeEditor("muldisp.v", 119, 90); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("muldisp.v", 115, 457); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("muldisp.v", 179, 466); // cl (w, cp)
+selectCodeEditor("muldisp.v", 179, 466); // cl (w, cp)
+selectCodeEditor("muldisp.v", 137, 5); // cl (w, cp)
+selectCodeEditor("muldisp.v", 146, 159); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sec.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "smg.v", 3); // k (j, cp)
+selectCodeEditor("smg.v", 97, 356); // cl (w, cp)
+selectCodeEditor("smg.v", 33, 406); // cl (w, cp)
+typeControlKey((HResource) null, "smg.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "muldisp.v", 2); // k (j, cp)
+selectCodeEditor("muldisp.v", 252, 153); // cl (w, cp)
+selectCodeEditor("muldisp.v", 244, 164); // cl (w, cp)
+typeControlKey((HResource) null, "muldisp.v", 'v'); // cl (w, cp)
+selectCodeEditor("muldisp.v", 244, 164); // cl (w, cp)
+selectCodeEditor("muldisp.v", 119, 163); // cl (w, cp)
+selectCodeEditor("muldisp.v", 122, 164); // cl (w, cp)
+typeControlKey((HResource) null, "muldisp.v", 'v'); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("muldisp.v", 122, 190); // cl (w, cp)
+selectCodeEditor("muldisp.v", 54, 195); // cl (w, cp)
+selectCodeEditor("muldisp.v", 75, 214); // cl (w, cp)
+selectCodeEditor("muldisp.v", 32, 179); // cl (w, cp)
+selectCodeEditor("muldisp.v", 118, 259); // cl (w, cp)
+selectCodeEditor("muldisp.v", 179, 161); // cl (w, cp)
+selectCodeEditor("muldisp.v", 242, 188); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("muldisp.v", 107, 162); // cl (w, cp)
+selectCodeEditor("muldisp.v", 158, 233); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("muldisp.v", 57, 393); // cl (w, cp)
+selectCodeEditor("muldisp.v", 94, 368); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("muldisp.v", 95, 375); // cl (w, cp)
+selectCodeEditor("muldisp.v", 61, 391); // cl (w, cp)
+selectCodeEditor("muldisp.v", 186, 344); // cl (w, cp)
+selectCodeEditor("muldisp.v", 109, 161); // cl (w, cp)
+selectCodeEditor("muldisp.v", 272, 286); // cl (w, cp)
+selectCodeEditor("muldisp.v", 139, 155); // cl (w, cp)
+selectCodeEditor("muldisp.v", 160, 269); // cl (w, cp)
+selectCodeEditor("muldisp.v", 131, 385); // cl (w, cp)
+selectCodeEditor("muldisp.v", 217, 399); // cl (w, cp)
+selectCodeEditor("muldisp.v", 232, 383); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("muldisp.v", 412, 383); // cl (w, cp)
+selectCodeEditor("muldisp.v", 135, 393); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

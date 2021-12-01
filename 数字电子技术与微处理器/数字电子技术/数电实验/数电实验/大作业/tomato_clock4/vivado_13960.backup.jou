@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 16 12:24:38 2020
+# Process ID: 13960
+# Current directory: G:/vivado_project/day3/tomatoes
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8564 G:\vivado_project\day3\tomatoes\smg.xpr
+# Log file: G:/vivado_project/day3/tomatoes/vivado.log
+# Journal file: G:/vivado_project/day3/tomatoes\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/vivado_project/day3/tomatoes/smg.xpr
+update_compile_order -fileset sources_1

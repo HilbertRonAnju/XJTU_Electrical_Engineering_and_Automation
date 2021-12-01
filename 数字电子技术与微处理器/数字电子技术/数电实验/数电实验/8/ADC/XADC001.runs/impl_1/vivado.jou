@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Nov 28 10:41:50 2020
+# Process ID: 4580
+# Current directory: D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.runs/impl_1
+# Command line: vivado.exe -log wdnmd.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source wdnmd.tcl -notrace
+# Log file: D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.runs/impl_1/wdnmd.vdi
+# Journal file: D:/Users/whxxjj/Documents/Vivado/XADC001/XADC001.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source wdnmd.tcl -notrace

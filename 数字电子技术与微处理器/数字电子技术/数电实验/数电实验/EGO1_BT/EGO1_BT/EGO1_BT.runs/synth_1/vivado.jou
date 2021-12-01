@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Apr 20 10:14:02 2019
+# Process ID: 1580
+# Current directory: E:/My_Vivado_EGO1/EGO1_BT/EGO1_BT.runs/synth_1
+# Command line: vivado.exe -log uart_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_top.tcl
+# Log file: E:/My_Vivado_EGO1/EGO1_BT/EGO1_BT.runs/synth_1/uart_top.vds
+# Journal file: E:/My_Vivado_EGO1/EGO1_BT/EGO1_BT.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source uart_top.tcl -notrace

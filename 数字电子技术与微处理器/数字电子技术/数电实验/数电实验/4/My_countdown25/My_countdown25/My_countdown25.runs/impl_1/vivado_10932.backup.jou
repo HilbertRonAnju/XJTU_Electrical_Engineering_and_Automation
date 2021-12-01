@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov  4 09:30:15 2020
+# Process ID: 10932
+# Current directory: E:/My_Verilog/My_countdown25/My_countdown25.runs/impl_1
+# Command line: vivado.exe -log My_countdown25.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source My_countdown25.tcl -notrace
+# Log file: E:/My_Verilog/My_countdown25/My_countdown25.runs/impl_1/My_countdown25.vdi
+# Journal file: E:/My_Verilog/My_countdown25/My_countdown25.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source My_countdown25.tcl -notrace

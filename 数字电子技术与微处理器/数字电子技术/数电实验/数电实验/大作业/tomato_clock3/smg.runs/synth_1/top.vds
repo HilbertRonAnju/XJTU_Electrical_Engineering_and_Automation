@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 30 21:04:55 2020
+# Process ID: 12000
+# Current directory: F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.runs/synth_1/top.vds
+# Journal file: F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9148 
+WARNING: [Synth 8-2507] parameter declaration becomes local in cyclecounter with formal parameter declaration list [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/cyclecounter.v:10]
+WARNING: [Synth 8-2507] parameter declaration becomes local in ButtonEdgeDetect with formal parameter declaration list [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/fsm.v:31]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 374.996 ; gain = 113.812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rstreg' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/rstreg.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'rstreg' (1#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/rstreg.v:2]
+WARNING: [Synth 8-350] instance 'rstctrl' of module 'rstreg' requires 3 connections, but only 2 given [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/top.v:27]
+INFO: [Synth 8-6157] synthesizing module 'idlehandler' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/idlehandler.v:2]
+	Parameter IDLETIME bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'idlehandler' (2#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/idlehandler.v:2]
+INFO: [Synth 8-6157] synthesizing module 'cyclecounter' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/cyclecounter.v:2]
+	Parameter IDLEWORKEDGE bound to: 16'b0001010100000000 
+	Parameter WORK bound to: 2'b01 
+	Parameter IDLE bound to: 2'b10 
+INFO: [Synth 8-4471] merging register 'prev_reg[1:0]' into 'current_reg[1:0]' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/cyclecounter.v:18]
+WARNING: [Synth 8-6014] Unused sequential element prev_reg was removed.  [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/cyclecounter.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'cyclecounter' (3#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/cyclecounter.v:2]
+WARNING: [Synth 8-689] width (8) of port connection 'cycle' does not match port width (1) of module 'cyclecounter' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/top.v:45]
+INFO: [Synth 8-6157] synthesizing module 'counter' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/m60_counter.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/m60_counter.v:35]
+WARNING: [Synth 8-5788] Register secoverflow_reg in module counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/m60_counter.v:46]
+WARNING: [Synth 8-5788] Register minnum_reg in module counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/m60_counter.v:73]
+WARNING: [Synth 8-5788] Register minoverflow_reg in module counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/m60_counter.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/m60_counter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'timereverse' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/timereverse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'timereverse' (5#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/timereverse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sec' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/sec.v:2]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter MAX bound to: 100000000 - type: integer 
+WARNING: [Synth 8-5788] Register sec_reg in module sec is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/sec.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'sec' (6#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/sec.v:2]
+INFO: [Synth 8-6157] synthesizing module 'muldisp' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/muldisp.v:2]
+	Parameter LEN bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'disp' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/smg.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'disp' (7#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/smg.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sec__parameterized0' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/sec.v:2]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter MAX bound to: 100000 - type: integer 
+WARNING: [Synth 8-5788] Register sec_reg in module sec__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/sec.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'sec__parameterized0' (7#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/sec.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'muldisp' (8#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/muldisp.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/top.v:82]
+INFO: [Synth 8-6157] synthesizing module 'dejittertop' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/dejittertop.v:2]
+	Parameter DEBUG bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sec__parameterized1' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/sec.v:2]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter MAX bound to: 5000000 - type: integer 
+WARNING: [Synth 8-5788] Register sec_reg in module sec__parameterized1 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/sec.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'sec__parameterized1' (8#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/sec.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ButtonEdgeDetect' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/fsm.v:23]
+	Parameter DEBUG bound to: 0 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter PRESSED bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ButtonEdgeDetect' (9#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/fsm.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/dejittertop.v:24]
+INFO: [Synth 8-6157] synthesizing module 'differenciator' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/differenciator.v:23]
+WARNING: [Synth 8-6104] Input port 'NumOut' has an internal driver [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/differenciator.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'differenciator' (10#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/differenciator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dejittertop' (11#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/dejittertop.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/top.v:88]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/top.v:94]
+INFO: [Synth 8-6157] synthesizing module 'statectrl' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/statectrl.v:23]
+	Parameter IDLE bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+	Parameter S2 bound to: 2'b10 
+WARNING: [Synth 8-567] referenced signal 'cstate' should be on the sensitivity list [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/statectrl.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'statectrl' (12#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/statectrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'timectrl' [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/timectrl.v:2]
+	Parameter WORK bound to: 2'b00 
+	Parameter IDLE bound to: 2'b01 
+	Parameter FREEMODE bound to: 2'b10 
+	Parameter WORKTIME bound to: 8'b00100101 
+	Parameter IDLETIME bound to: 8'b00000101 
+INFO: [Synth 8-6155] done synthesizing module 'timectrl' (13#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/timectrl.v:2]
+WARNING: [Synth 8-3848] Net key2out in module/entity top does not have driver. [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/top.v:21]
+WARNING: [Synth 8-3848] Net key1out in module/entity top does not have driver. [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/top.v:21]
+WARNING: [Synth 8-3848] Net modekeyout in module/entity top does not have driver. [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/top.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'top' (14#1) [F:/桌面/西安交通大学/数字电子技术与微处理器/数字电子技术/数电实验/数电实验/大作业/chronopro/smg.srcs/sources_1/new/top.v:2]
+WARNING: [Synth 8-3917] design top has port cycle[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port cycle[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port cycle[5] driven by constant 0
+WARNING: [Synth 8-3917] design top has port cycle[4] driven by constant 0
+WARNING: [Synth 8-3917] design top has port cycle[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port cycle[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port cycle[1] driven by constant 0
