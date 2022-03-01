@@ -1,0 +1,525 @@
+%======================================================%
+%   Beamer Presentation
+%   LaTeX Template
+%   compile using PDFTeXify, PDFLaTeX
+%======================================================%
+
+%--------------------------------------------------------------------------------
+%   PACKAGES AND THEMES
+%--------------------------------------------------------------------------------
+
+\documentclass[notheorems,11pt,compress]{beamer}
+
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%------- Beamer theme ------
+%\usetheme{Frankfurt}
+%\usetheme{Montpellier}
+%\usetheme{Warsaw}
+%\usetheme{CambridgeUS}
+%\usetheme{Boadilla}
+
+%------- Color theme ------
+\usecolortheme{rose}
+%\usecolortheme{orchid}
+%\usecolortheme{lily}
+%\usecolortheme{whale}
+%\usecolortheme{dolphin}
+%\usecolortheme{seahorse}
+
+%\usetheme{boxes}
+%\setbeamercovered{transparent}
+%\usefonttheme[onlymath]{serif}
+\usefonttheme{serif}
+\usefonttheme{professionalfonts}
+
+%\setbeamertemplate{headline}{}
+%\setbeamertemplate{footline}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]  % ball, circle
+\setbeamertemplate{enumerate items}[default]
+%\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{section in toc}
+{\leavevmode\leftskip=2.5em%
+  \llap{%
+    \usebeamerfont*{section number projected}%
+    \usebeamercolor{section number projected}%
+    \begin{pgfpicture}{-1ex}{0ex}{1ex}{2ex}
+      \color{darkorange}
+      \pgfpathcircle{\pgfpoint{0pt}{.75ex}}{1.3ex}
+      \pgfusepath{fill}
+      \pgftext[base]{\color{fg}\inserttocsectionnumber}
+    \end{pgfpicture}\kern1.25ex%
+  }%
+  \inserttocsection\par
+}
+
+
+\setbeamersize{text margin left=0.5cm, text margin right=0.5cm}
+
+\definecolor{darkblue}{rgb}{0.02,0.24,0.44}
+\definecolor{darkorange}{rgb}{0.80,0.4,0.1}
+\definecolor{lightgray}{rgb}{0.78,0.78,0.78}
+\definecolor{darkgray}{rgb}{0.30,0.30,0.30}
+\definecolor{darkgreen}{rgb}{0.02,0.18,0.20}
+\definecolor{footer}{rgb}{0.5,0.2,0.5}
+
+\setbeamercolor{frametitle}{fg=darkblue,bg=black!5}
+\setbeamercolor{section in head/foot}{bg=black,fg=darkorange}
+\setbeamercolor{lower separation line head}{bg=darkblue}
+\setbeamertemplate{section in head/foot shaded}{\color{lightgray}
+\usebeamertemplate{section in head/foot}}
+
+\setbeamercolor{title in head/foot}{bg=darkgreen,fg=black!5}
+\setbeamercolor{section in toc}{fg=darkorange}
+
+\setbeamercolor{structure}{fg=darkblue}
+\setbeamercolor{alerted text}{fg=darkorange}
+
+%\setbeamertemplate{section in toc}[sections numbered]
+%\setbeamertemplate{subsection in toc}[subsections numbered]
+%\setbeamertemplate{section in toc}[ball unnumbered]
+%\setbeamertemplate{subsection in toc}[ball unnumbered]
+
+% change the style of headline
+\setbeamertemplate{headline}{
+\begin{beamercolorbox}[ht=4.5ex]{section in head/foot} %,dp=0.0ex
+   \vskip2pt\insertsectionnavigationhorizontal{\textwidth}{}{}\vskip2pt
+   %\vskip2pt\insertnavigation{\paperwidth}\vskip2pt
+\end{beamercolorbox}
+\begin{beamercolorbox}[colsep=1.5pt]{lower separation line head} %
+\end{beamercolorbox}
+}
+
+%\addtobeamertemplate{frametitle}{}{\vspace*{-3ex}}
+
+\setbeamertemplate{frametitle}{%
+    \nointerlineskip%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.75ex,dp=1ex]{frametitle}
+        \hspace*{1.5ex}\insertframetitle%
+    \end{beamercolorbox}%
+}
+
+%\setbeamertemplate{footline}{%
+%  \hfill%
+%  %\usebeamercolor[fg]{page number in head/foot}%
+%  \usebeamercolor[footer]{page number in head/foot}%
+%  \usebeamerfont{page number in head/foot}%
+%  \insertframenumber \,/\,\inserttotalframenumber
+%  \kern1em\vskip3pt%
+%}
+
+\setbeamertemplate{footline}
+{%
+  \leavevmode%
+  \begin{beamercolorbox}[wd=0.25\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot} ~~\insertshortauthor~(\insertshortinstitute) \hfill
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=0.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\centering \insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=0.25\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot} \hfill
+    \insertframenumber\,/\,\inserttotalframenumber\kern2pt%
+  \end{beamercolorbox}%
+  \vskip0pt%
+}
+
+
+%--------- Package  ----------
+\usepackage[UTF8,noindent]{ctex}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,version}
+\usepackage{graphicx,fancybox,mathrsfs,multirow}
+\usepackage{booktabs}
+\usepackage{epsfig,epstopdf}
+\usepackage{url,hyperref}
+\usepackage{tabularx,array,makecell}
+\usepackage{color,xcolor}
+\usepackage{cases}
+\usepackage{tcolorbox}
+\usepackage{mathtools}
+\usepackage{tikz}
+
+
+%---------- Set line spacing ----------
+%\renewcommand{\baselinestretch}{1.15}
+
+
+%---------- Define new table commands ----------
+\newcolumntype{P}[1]{>{\centering \arraybackslash}p{#1}}
+\newcolumntype{L}{X}
+\newcolumntype{C}{>{\centering \arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft \arraybackslash}X}
+
+
+%---------- Set fonts ----------
+\setbeamerfont{normal text}{family=\rmfamily}
+\setbeamerfont{frametitle}{family=\sffamily}
+%\setbeamerfont{frametitle}{family=\rmfamily,series=\bfseries}
+\setbeamerfont{title}{family=\sffamily}
+\setbeamerfont{subtitle}{family=\sffamily}
+\setbeamerfont{institute}{family=\rmfamily}
+\setbeamerfont{author}{family=\rmfamily}
+\setbeamerfont{date}{family=\rmfamily}
+\setbeamerfont{headline}{family=\sffamily}
+\setbeamerfont{footline}{family=\sffamily}
+\setbeamerfont{section in toc}{family=\rmfamily}
+\setbeamerfont{subsection in toc}{family=\rmfamily}
+\AtBeginDocument{\usebeamerfont{normal text}}
+
+\setbeamercolor{title}{fg=darkblue,bg=black!10}
+\setbeamercolor{subtitle}{fg=darkblue!80}
+%\setbeamercolor{institute}{fg=white}
+%\setbeamercolor{author}{fg=white}
+%\setbeamercolor{date}{fg=white}
+
+
+%---------- Theorem environment ----------
+\setbeamertemplate{theorems}[numbered]
+\addtobeamertemplate{theorem begin}{\normalfont}{}
+\newtheorem{theorem}{Theorem}
+\numberwithin{theorem}{section}
+\newtheorem{definition}{Definition}
+\numberwithin{definition}{section}
+\newtheorem{lemma}{Lemma}
+\numberwithin{lemma}{section}
+\newtheorem{proposition}{Proposition}
+\numberwithin{proposition}{section}
+\newtheorem{corollary}{Corollary}
+\numberwithin{corollary}{section}
+\theoremstyle{example}
+\newtheorem{example}{Example}
+%\numberwithin{example}{section}
+\renewenvironment{proof}[1][Proof]{\textit{#1}:~~}{\qed\par}
+\newenvironment{solution}{\par\noindent\textbf{Solution}:~~}{\par}
+
+\setbeamertemplate{caption}[numbered]
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\numberwithin{equation}{section}
+
+
+%---------- Adjust the spacing of formulas ----------
+%\AtBeginDocument{
+%	\setlength{\abovedisplayskip}{4pt plus 1pt minus 1pt}
+%	\setlength{\belowdisplayskip}{4pt plus 1pt minus 1pt}
+%	\setlength{\abovedisplayshortskip}{2pt}
+%	\setlength{\belowdisplayshortskip}{2pt}
+%	\setlength{\arraycolsep}{2pt}
+%}
+
+\makeatletter
+\newcommand\HUGE{\@setfontsize\Huge{32}{36}}
+\makeatother
+
+%---------- Define new commands ----------
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+
+
+%--------------------------------------------------------------------------------
+%	TITLE PAGE
+%--------------------------------------------------------------------------------
+
+\title[Short title]{Full Title of the Talk} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{John Smith} % Your name
+\institute[NU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{\blue{Name of University} \\ % Your institution for the title page
+\medskip
+\textit{xyz@math.univ.edu} % Your email address
+}
+
+\date[Jan. 8, 2022]{\small Very Large Conference \\[5pt] Jan. 8, 2022} % Date, can be changed to a custom date
+
+
+\graphicspath{{./figures/}}
+
+
+\begin{document}
+
+% only change the spacing of body text
+\setlength{\baselineskip}{15pt}
+
+%\thispagestyle{empty}
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+
+%\begin{frame}
+%\frametitle{Outline}
+%\tableofcontents[hideallsubsections] % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+%\end{frame}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+
+%--------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%--------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Introduction} %
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Paragraphs of Text}
+This is paragraphs of text. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. \\~\\
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+\end{frame}
+
+
+%------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Lists}
+
+\begin{enumerate}
+  \item This is a enumerate environment.
+  \item This is a enumerate environment.
+  \item This is a enumerate environment.
+\end{enumerate}
+
+\vspace{2ex}
+\begin{itemize}[<+-| alert@+>]
+\item This is a itemize environment.
+\item This is a itemize environment.
+\item This is a itemize environment.
+\end{itemize}
+\end{frame}
+
+
+%------------------------------------------------
+\section{Preliminaries}
+%------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Blocks of Highlighted Text}
+\begin{block}{Block Title}
+This is the block environment. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+\end{block}
+
+\begin{exampleblock}{Block Title}
+This is the exampleblock environment. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+\end{exampleblock}
+
+\begin{alertblock}{Block Title}
+This is the alertblock environment. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+\end{alertblock}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Numerical method} %for the model equation
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Multiple Columns}
+\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{0.5\textwidth}
+This is a text in first column.
+$$E=mc^2$$
+\begin{itemize}
+\item First item
+\item Second item
+\end{itemize}
+
+\column{0.5\textwidth}
+This text will be in the second column
+and on a second tought this is a nice looking
+layout in some cases.
+
+\end{columns}
+\end{frame}
+
+%------------------------------------------------
+\section{Error analysis}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Theorem}
+
+\begin{definition}
+This is a definition environment.
+\end{definition}
+
+\begin{lemma}
+This is a lemma environment.
+\end{lemma}
+
+\begin{proposition}
+This is a proposition environment.
+\end{proposition}
+
+\begin{theorem}[Mass--energy]
+This is a theorem environment.
+\end{theorem}
+
+\begin{proof}
+  This is a proof environment.
+\end{proof}
+\end{frame}
+
+
+%------------------------------------------------
+\section{Numerical results}  %experiments
+%------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Formula and Table}
+
+This is Pythagorean's theorem
+\begin{equation}\label{Pythagorean}
+  a^2+b^2=c^2.
+\end{equation}
+
+This is a simple three-line table.
+\begin{table}
+\caption{Table caption}
+\begin{tabular}{l l l}
+\toprule
+Treatments & Response 1 & Response 2 \\
+\midrule
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{}
+The new command PLCR is defined to set the length of the width of the table. They can be used in the tabularx environment.
+
+\begin{table}[!htp]
+\centering
+\renewcommand\arraystretch{1.05}
+\caption{A sample of the height and weight of students.}
+\label{tab2:heightweight}
+% PLCR is defined in the preamble
+\begin{tabularx}{0.8\textwidth}{lCCC}
+   \toprule %\Xhline{2\arrayrulewidth}
+	Number &  Age & Height & Weight\\
+	\midrule
+	1&14&156&42\\
+	2&16&158&45\\
+	3&14&162&48\\
+	4&15&163&50\\
+    \cmidrule{2-4}
+	Mean &15&159.75&46.25\\
+	\bottomrule
+\end{tabularx}
+\end{table}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\frametitle{Verbatim}
+\begin{example}[Theorem Slide Code]
+\begin{verbatim}
+\begin{frame}
+\frametitle{Theorem}
+\begin{theorem}[Mass--energy equivalence]
+$E = mc^2$
+\end{theorem}
+\end{frame}\end{verbatim}
+\end{example}
+
+\begin{theorem}[Mass--energy equivalence]
+$E = mc^2$
+\end{theorem}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Figure}
+
+Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=0.6\linewidth]{image1.eps}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Two pictures}
+\begin{figure}[htb]
+\centering
+\begin{minipage}{0.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{image1}
+\caption{Caption of Figure 1.}
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{image2}
+\caption{Caption of Figure 2.}
+\end{minipage}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\section{Concluding remarks}
+%------------------------------------------------
+
+\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\frametitle{Citation}
+An example of the \verb|\cite| command to cite within the presentation:\\~
+
+This statement requires citation \cite{Smith2012}.
+\end{frame}
+
+%------------------------------------------------
+\section{}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{References}
+\footnotesize{
+\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[Smith, 2012]{Smith2012} John Smith. Title of the publication. \emph{Journal Name}, 12(3):45--678, 2012.
+\end{thebibliography}
+}
+\end{frame}
+
+
+%\setbeamertemplate{headline}{}
+\begin{frame}
+\rmfamily
+\begin{center}
+\HUGE{\textcolor{darkorange}{Thank you!}}
+\end{center}
+\end{frame}
+
+%------------------------------------------------
+%%\setbeamertemplate{background canvas}[vertical shading][bottom=white,top=structure.fg!25]
+%\begin{frame}
+%\Huge{\centerline{The End}}
+%\end{frame}
+
+
+\end{document}
+

@@ -1,0 +1,6 @@
+\frametitle{Citation}
+An example of the \verb|\cite| command to cite within the presentation:\\~
+
+This statement requires citation \cite{Smith2012}. \\~
+
+文献引用示例 \cite{LiLiu1997}, 可以修改引用文献样式.

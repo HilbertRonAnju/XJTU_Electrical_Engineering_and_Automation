@@ -1,0 +1,11 @@
+#tex文件忽略
+*.aux
+*.log
+*.synctex.gz
+*.nav
+*.out
+*.snm
+*.toc
+*.blg
+
+.DS_Store
