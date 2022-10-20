@@ -1,6 +1,0 @@
-\beamer@sectionintoc {1}{研究背景}{3}{0}{1}
-\beamer@sectionintoc {2}{准备知识}{5}{0}{2}
-\beamer@sectionintoc {3}{研究内容}{9}{0}{3}
-\beamer@sectionintoc {4}{误差分析}{10}{0}{4}
-\beamer@sectionintoc {5}{数值实验}{14}{0}{5}
-\beamer@sectionintoc {6}{总结与展望}{16}{0}{6}
